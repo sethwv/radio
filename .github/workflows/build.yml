@@ -219,9 +219,13 @@ jobs:
             for csv in ${prefix}-*.csv; do
               if [ "$first" = true ]; then
                 cat "$csv" >> /tmp/grouped-${prefix}.csv
+                # Ensure file ends with newline
+                [ -n "$(tail -c 1 /tmp/grouped-${prefix}.csv)" ] && echo >> /tmp/grouped-${prefix}.csv
                 first=false
               else
                 tail -n +2 "$csv" >> /tmp/grouped-${prefix}.csv
+                # Ensure file ends with newline
+                [ -n "$(tail -c 1 /tmp/grouped-${prefix}.csv)" ] && echo >> /tmp/grouped-${prefix}.csv
               fi
             done
             
@@ -298,9 +302,8 @@ jobs:
             fi
             
             if [ "$IS_PREFIX" = true ]; then
-              # This is a grouped playlist - show which CSVs it contains
-              CSV_LIST=$(ls ${branch}-*.csv 2>/dev/null | tr '\n' ', ' | sed 's/,$//')
-              CSV_NAME="**${branch}-*** (${CSV_LIST})"
+              # This is a grouped playlist
+              CSV_NAME="**${branch}**"
               CSV_URL="https://github.com/${GITHUB_REPOSITORY}/tree/main"
               RAW_URL="https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/${branch}/playlist.m3u8"
               COMMIT_HASH=$(git rev-parse "origin/$branch" 2>/dev/null)

@@ -23,12 +23,14 @@ def build_extinf(chno, logo, group, title):
 def main():
     csv_file = Path(sys.argv[1]) if len(sys.argv) > 1 else SCRIPT_DIR / "stations.csv"
 
+    # First pass: group all stations by section
+    from collections import OrderedDict
+    sections = OrderedDict()
+    current_section = None
+    
     with open(csv_file, newline="", encoding="utf-8") as f:
         reader = csv.DictReader(f)
-        lines = ["#EXTM3U"]
-        current_section = None
-        seen_sections = set()
-
+        
         for row in reader:
             section  = row["section"].strip()
             chno     = row["chno"].strip()
@@ -37,23 +39,40 @@ def main():
             title    = row["title"].strip()
             url      = row["url"].strip()
 
-            if section and section != current_section:
+            # Update current section if this row specifies one
+            if section:
                 current_section = section
-                # Only output section header if we haven't seen this section before
-                if section not in seen_sections:
-                    seen_sections.add(section)
-                    bar = "=" * 67
-                    lines += [
-                        "",
-                        f"# {bar}",
-                        f"# {section}",
-                        f"# {bar}",
-                        "",
-                    ]
+                if current_section not in sections:
+                    sections[current_section] = []
+            
+            # Add station to current section
+            if current_section:
+                sections[current_section].append({
+                    'chno': chno,
+                    'logo': logo,
+                    'group': group,
+                    'title': title,
+                    'url': url
+                })
 
-            lines.append(f"# {title}")
-            lines.append(build_extinf(chno, logo, group, title))
-            lines.append(url)
+    # Second pass: output grouped by section
+    lines = ["#EXTM3U"]
+    
+    for section, stations in sections.items():
+        bar = "=" * 67
+        lines += [
+            "",
+            f"# {bar}",
+            f"# {section}",
+            f"# {bar}",
+            "",
+        ]
+        
+        for station in stations:
+            lines.append(f"# {station['title']}")
+            lines.append(build_extinf(station['chno'], station['logo'], 
+                                     station['group'], station['title']))
+            lines.append(station['url'])
             lines.append("")
 
     output = "\n".join(lines).rstrip("\n") + "\n"
