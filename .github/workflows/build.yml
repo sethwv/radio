@@ -1,0 +1,217 @@
+name: Generate m3u8 Playlist
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '*.csv'
+      - build.py
+      - .github/workflows/build.yml
+  workflow_dispatch:
+    inputs:
+      csv_file:
+        description: 'CSV to build (leave empty for all)'
+        required: false
+        default: ''
+      force_push:
+        description: 'Reset history (force push)'
+        required: false
+        default: false
+        type: boolean
+
+jobs:
+  discover:
+    name: Discover CSV files
+    runs-on: ubuntu-latest
+    outputs:
+      csvs: ${{ steps.set-matrix.outputs.csvs }}
+      has-csvs: ${{ steps.set-matrix.outputs.has-csvs }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Determine CSV files to build
+        id: set-matrix
+        run: |
+          if [ "$GITHUB_EVENT_NAME" = "workflow_dispatch" ] && [ -n "${{ inputs.csv_file }}" ]; then
+            LIST="${{ inputs.csv_file }}"
+          elif [ "$GITHUB_EVENT_NAME" = "workflow_dispatch" ] || git diff --name-only HEAD~1 HEAD | grep -q 'build.py'; then
+            LIST=$(ls *.csv 2>/dev/null | tr '\n' ' ')
+          else
+            # Only include added, copied, modified, and renamed CSV files (not deleted)
+            LIST=$(git diff --name-only --diff-filter=ACMR HEAD~1 HEAD | grep '\.csv$' | tr '\n' ' ')
+          fi
+          
+          # Convert to JSON array for matrix
+          if [ -n "$LIST" ]; then
+            JSON_ARRAY=$(echo "$LIST" | tr ' ' '\n' | grep -v '^$' | jq -R -s -c 'split("\n") | map(select(length > 0))')
+            echo "csvs=$JSON_ARRAY" >> "$GITHUB_OUTPUT"
+            echo "has-csvs=true" >> "$GITHUB_OUTPUT"
+            echo "Found CSVs to build: $LIST"
+          else
+            echo "csvs=[]" >> "$GITHUB_OUTPUT"
+            echo "has-csvs=false" >> "$GITHUB_OUTPUT"
+            echo "No CSVs to build"
+          fi
+
+  cleanup-branches:
+    name: Cleanup orphaned branches
+    runs-on: ubuntu-latest
+    needs: discover
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Delete branches for missing CSV files
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git remote set-url origin "https://x-access-token:${GH_TOKEN}@${GITHUB_SERVER_URL#*//}/${GITHUB_REPOSITORY}"
+          
+          # Get list of existing CSV files (basename without extension)
+          EXISTING_CSVS=$(ls *.csv 2>/dev/null | sed 's/\.csv$//' | sort)
+          echo "Existing CSV files:"
+          echo "$EXISTING_CSVS"
+          
+          # Get all remote branches except main
+          git fetch --prune origin
+          BRANCHES=$(git branch -r | grep -v 'HEAD' | grep -v 'main' | sed 's/origin\///' | xargs)
+          echo "Existing branches:"
+          echo "$BRANCHES"
+          
+          # Delete branches that don't have a corresponding CSV file
+          for branch in $BRANCHES; do
+            branch=$(echo "$branch" | xargs)  # trim whitespace
+            if ! echo "$EXISTING_CSVS" | grep -q "^${branch}$"; then
+              echo "No CSV found for branch: $branch - deleting"
+              git push origin --delete "$branch" 2>/dev/null || echo "Failed to delete branch $branch"
+            else
+              echo "Branch $branch has corresponding CSV file"
+            fi
+          done
+
+  build-deploy:
+    name: Build and deploy playlists
+    runs-on: ubuntu-latest
+    needs: discover
+    if: needs.discover.outputs.has-csvs == 'true'
+    permissions:
+      contents: write
+    strategy:
+      matrix:
+        csv: ${{ fromJson(needs.discover.outputs.csvs) }}
+      fail-fast: false
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate playlist for ${{ matrix.csv }}
+        run: |
+          echo "Generating ${{ matrix.csv }}"
+          python3 build.py "${{ matrix.csv }}"
+          # Save to temp location before branch checkout
+          cp playlist.m3u8 /tmp/playlist.m3u8
+
+      - name: Deploy to branch
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          FORCE_PUSH: ${{ inputs.force_push }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git remote set-url origin "https://x-access-token:${GH_TOKEN}@${GITHUB_SERVER_URL#*//}/${GITHUB_REPOSITORY}"
+
+          branch="${{ matrix.csv }}"
+          branch="${branch%.csv}"
+          
+          # Clean up generated file before checkout
+          rm -f playlist.m3u8
+          
+          if [ "$FORCE_PUSH" = "true" ]; then
+            git checkout --orphan "$branch"
+            git rm -rf .
+          elif git fetch origin "$branch" 2>/dev/null; then
+            # Remote branch exists, check it out
+            git checkout -B "$branch" "origin/$branch"
+          else
+            # Remote branch doesn't exist, create new orphan branch
+            git checkout --orphan "$branch"
+            git rm -rf .
+          fi
+
+          # Restore the generated playlist
+          cp /tmp/playlist.m3u8 playlist.m3u8
+          git add playlist.m3u8
+          
+          # Only commit if there are changes
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Generate playlist.m3u8 from ${{ matrix.csv }} ($(date -u '+%Y-%m-%d %H:%M UTC'))"
+            
+            if [ "$FORCE_PUSH" = "true" ]; then
+              git push --force origin "$branch"
+            else
+              git push origin "$branch"
+            fi
+          fi
+
+  update-readme:
+    name: Update README
+    runs-on: ubuntu-latest
+    needs: [discover, cleanup-branches, build-deploy]
+    if: always() && needs.cleanup-branches.result == 'success'
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Update README with playlist links
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git remote set-url origin "https://x-access-token:${GH_TOKEN}@${GITHUB_SERVER_URL#*//}/${GITHUB_REPOSITORY}"
+          
+          git fetch --prune origin
+          
+          # Get all remote branches except main and generate table rows
+          > /tmp/playlist_links.txt
+          git branch -r | grep -v 'HEAD' | grep -v 'main' | sed 's/origin\///' | sort | while read branch; do
+            branch=$(echo "$branch" | xargs)  # trim whitespace
+            CSV_FILE="${branch}.csv"
+            CSV_URL="https://github.com/${GITHUB_REPOSITORY}/blob/main/${CSV_FILE}"
+            RAW_URL="https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/${branch}/playlist.m3u8"
+            COMMIT_HASH=$(git rev-parse "origin/$branch" 2>/dev/null)
+            COMMIT_URL="https://github.com/${GITHUB_REPOSITORY}/commit/${COMMIT_HASH}"
+            TIMESTAMP=$(git log -1 --format=%cd --date=format:'%Y-%m-%d %H:%M UTC' "origin/$branch" 2>/dev/null || echo "N/A")
+            echo "| [${CSV_FILE}](${CSV_URL}) | ${RAW_URL} | [${TIMESTAMP}](${COMMIT_URL}) |" >> /tmp/playlist_links.txt
+          done
+          
+          # Update README.md
+          awk '
+            /^## Playlists/ { print; found=1; next }
+            found && /^<!-- AUTO-GENERATED/ { 
+              print
+              print ""
+              print "| CSV | Playlist | Updated |"
+              print "|-----|----------|---------|"
+              while ((getline line < "/tmp/playlist_links.txt") > 0) print line
+              close("/tmp/playlist_links.txt")
+              skip=1
+              next
+            }
+            skip && /^##/ { skip=0 }
+            !skip || !found { print }
+          ' README.md > README.md.tmp && mv README.md.tmp README.md
+          
+          # Commit and push if changed
+          if ! git diff --quiet README.md; then
+            git add README.md
+            git commit -m "Update playlist links in README"
+            git push origin main
+          fi
