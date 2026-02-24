@@ -305,7 +305,7 @@ jobs:
               # This is a grouped playlist
               CSV_NAME="**${branch}**"
               CSV_URL="https://github.com/${GITHUB_REPOSITORY}/tree/main"
-              RAW_URL="https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/${branch}/playlist.m3u8"
+              RAW_URL="https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/refs/heads/${branch}/playlist.m3u8"
               COMMIT_HASH=$(git rev-parse "origin/$branch" 2>/dev/null)
               COMMIT_URL="https://github.com/${GITHUB_REPOSITORY}/commit/${COMMIT_HASH}"
               TIMESTAMP=$(git log -1 --format=%cd --date=format:'%Y-%m-%d %H:%M UTC' "origin/$branch" 2>/dev/null || echo "N/A")
@@ -314,7 +314,7 @@ jobs:
               # Individual CSV branch
               CSV_FILE="${branch}.csv"
               CSV_URL="https://github.com/${GITHUB_REPOSITORY}/blob/main/${CSV_FILE}"
-              RAW_URL="https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/${branch}/playlist.m3u8"
+              RAW_URL="https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/refs/heads/${branch}/playlist.m3u8"
               COMMIT_HASH=$(git rev-parse "origin/$branch" 2>/dev/null)
               COMMIT_URL="https://github.com/${GITHUB_REPOSITORY}/commit/${COMMIT_HASH}"
               TIMESTAMP=$(git log -1 --format=%cd --date=format:'%Y-%m-%d %H:%M UTC' "origin/$branch" 2>/dev/null || echo "N/A")
