@@ -77,21 +77,36 @@ jobs:
           echo "Existing CSV files:"
           echo "$EXISTING_CSVS"
           
+          # Get list of valid prefixes (for grouped playlists)
+          VALID_PREFIXES=$(ls *.csv 2>/dev/null | grep '-' | sed 's/-.*//' | sort -u)
+          echo "Valid prefix groups:"
+          echo "$VALID_PREFIXES"
+          
           # Get all remote branches except main
           git fetch --prune origin
           BRANCHES=$(git branch -r | grep -v 'HEAD' | grep -v 'main' | sed 's/origin\///' | xargs)
           echo "Existing branches:"
           echo "$BRANCHES"
           
-          # Delete branches that don't have a corresponding CSV file
+          # Delete branches that don't have a corresponding CSV file or valid prefix
           for branch in $BRANCHES; do
             branch=$(echo "$branch" | xargs)  # trim whitespace
-            if ! echo "$EXISTING_CSVS" | grep -q "^${branch}$"; then
-              echo "No CSV found for branch: $branch - deleting"
-              git push origin --delete "$branch" 2>/dev/null || echo "Failed to delete branch $branch"
-            else
+            
+            # Check if branch matches a CSV file
+            if echo "$EXISTING_CSVS" | grep -q "^${branch}$"; then
               echo "Branch $branch has corresponding CSV file"
+              continue
             fi
+            
+            # Check if branch is a valid prefix group
+            if echo "$VALID_PREFIXES" | grep -q "^${branch}$"; then
+              echo "Branch $branch is a valid prefix group"
+              continue
+            fi
+            
+            # No match found, delete the branch
+            echo "No CSV or prefix found for branch: $branch - deleting"
+            git push origin --delete "$branch" 2>/dev/null || echo "Failed to delete branch $branch"
           done
 
   build-deploy:
@@ -159,11 +174,99 @@ jobs:
             fi
           fi
 
+  build-grouped:
+    name: Build grouped playlists
+    runs-on: ubuntu-latest
+    needs: [discover, build-deploy]
+    if: needs.discover.outputs.has-csvs == 'true'
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate grouped playlists by prefix
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          FORCE_PUSH: ${{ inputs.force_push }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git remote set-url origin "https://x-access-token:${GH_TOKEN}@${GITHUB_SERVER_URL#*//}/${GITHUB_REPOSITORY}"
+          
+          # Get all unique prefixes (part before first dash in filename)
+          PREFIXES=$(ls *.csv 2>/dev/null | grep '-' | sed 's/-.*//' | sort -u)
+          
+          if [ -z "$PREFIXES" ]; then
+            echo "No prefixed CSVs found, skipping grouped playlists"
+            exit 0
+          fi
+          
+          for prefix in $PREFIXES; do
+            echo "Processing prefix group: $prefix"
+            
+            # Find all CSVs with this prefix
+            MATCHING_CSVS=$(ls ${prefix}-*.csv 2>/dev/null)
+            if [ -z "$MATCHING_CSVS" ]; then
+              continue
+            fi
+            
+            echo "Combining CSVs for prefix '$prefix':"
+            echo "$MATCHING_CSVS"
+            
+            # Merge CSVs with this prefix (keeping only first header)
+            > /tmp/grouped-${prefix}.csv
+            first=true
+            for csv in ${prefix}-*.csv; do
+              if [ "$first" = true ]; then
+                cat "$csv" >> /tmp/grouped-${prefix}.csv
+                first=false
+              else
+                tail -n +2 "$csv" >> /tmp/grouped-${prefix}.csv
+              fi
+            done
+            
+            # Generate playlist
+            python3 build.py /tmp/grouped-${prefix}.csv
+            cp playlist.m3u8 /tmp/playlist-${prefix}.m3u8
+            rm -f playlist.m3u8
+            
+            # Deploy to prefix branch
+            branch="$prefix"
+            
+            if [ "$FORCE_PUSH" = "true" ]; then
+              git checkout --orphan "$branch"
+              git rm -rf .
+            elif git fetch origin "$branch" 2>/dev/null; then
+              git checkout -B "$branch" "origin/$branch"
+            else
+              git checkout --orphan "$branch"
+              git rm -rf .
+            fi
+
+            cp /tmp/playlist-${prefix}.m3u8 playlist.m3u8
+            git add playlist.m3u8
+            
+            if git diff --cached --quiet; then
+              echo "No changes to commit for prefix '$prefix'"
+            else
+              git commit -m "Generate grouped playlist for ${prefix}-*.csv ($(date -u '+%Y-%m-%d %H:%M UTC'))"
+              
+              if [ "$FORCE_PUSH" = "true" ]; then
+                git push --force origin "$branch"
+              else
+                git push origin "$branch"
+              fi
+            fi
+            
+            # Return to main for next iteration
+            git checkout main
+          done
+
   update-readme:
     name: Update README
     runs-on: ubuntu-latest
-    needs: [discover, cleanup-branches, build-deploy]
-    if: always() && needs.cleanup-branches.result == 'success'
+    needs: [discover, cleanup-branches, build-deploy, build-grouped]
+    if: always() && needs.cleanup-branches.result == 'success' && (needs.build-deploy.result == 'success' || needs.build-deploy.result == 'skipped') && (needs.build-grouped.result == 'success' || needs.build-grouped.result == 'skipped')
     permissions:
       contents: write
     steps:
@@ -179,17 +282,41 @@ jobs:
           
           git fetch --prune origin
           
+          # Get list of CSV files and prefixes
+          EXISTING_CSVS=$(ls *.csv 2>/dev/null | sed 's/\.csv$//' | sort)
+          VALID_PREFIXES=$(ls *.csv 2>/dev/null | grep '-' | sed 's/-.*//' | sort -u)
+          
           # Get all remote branches except main and generate table rows
           > /tmp/playlist_links.txt
           git branch -r | grep -v 'HEAD' | grep -v 'main' | sed 's/origin\///' | sort | while read branch; do
             branch=$(echo "$branch" | xargs)  # trim whitespace
-            CSV_FILE="${branch}.csv"
-            CSV_URL="https://github.com/${GITHUB_REPOSITORY}/blob/main/${CSV_FILE}"
-            RAW_URL="https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/${branch}/playlist.m3u8"
-            COMMIT_HASH=$(git rev-parse "origin/$branch" 2>/dev/null)
-            COMMIT_URL="https://github.com/${GITHUB_REPOSITORY}/commit/${COMMIT_HASH}"
-            TIMESTAMP=$(git log -1 --format=%cd --date=format:'%Y-%m-%d %H:%M UTC' "origin/$branch" 2>/dev/null || echo "N/A")
-            echo "| [${CSV_FILE}](${CSV_URL}) | ${RAW_URL} | [${TIMESTAMP}](${COMMIT_URL}) |" >> /tmp/playlist_links.txt
+            
+            # Check if this is a prefix group branch
+            IS_PREFIX=false
+            if echo "$VALID_PREFIXES" | grep -q "^${branch}$"; then
+              IS_PREFIX=true
+            fi
+            
+            if [ "$IS_PREFIX" = true ]; then
+              # This is a grouped playlist - show which CSVs it contains
+              CSV_LIST=$(ls ${branch}-*.csv 2>/dev/null | tr '\n' ', ' | sed 's/,$//')
+              CSV_NAME="**${branch}-*** (${CSV_LIST})"
+              CSV_URL="https://github.com/${GITHUB_REPOSITORY}/tree/main"
+              RAW_URL="https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/${branch}/playlist.m3u8"
+              COMMIT_HASH=$(git rev-parse "origin/$branch" 2>/dev/null)
+              COMMIT_URL="https://github.com/${GITHUB_REPOSITORY}/commit/${COMMIT_HASH}"
+              TIMESTAMP=$(git log -1 --format=%cd --date=format:'%Y-%m-%d %H:%M UTC' "origin/$branch" 2>/dev/null || echo "N/A")
+              echo "| ${CSV_NAME} | ${RAW_URL} | [${TIMESTAMP}](${COMMIT_URL}) |" >> /tmp/playlist_links.txt
+            else
+              # Individual CSV branch
+              CSV_FILE="${branch}.csv"
+              CSV_URL="https://github.com/${GITHUB_REPOSITORY}/blob/main/${CSV_FILE}"
+              RAW_URL="https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/${branch}/playlist.m3u8"
+              COMMIT_HASH=$(git rev-parse "origin/$branch" 2>/dev/null)
+              COMMIT_URL="https://github.com/${GITHUB_REPOSITORY}/commit/${COMMIT_HASH}"
+              TIMESTAMP=$(git log -1 --format=%cd --date=format:'%Y-%m-%d %H:%M UTC' "origin/$branch" 2>/dev/null || echo "N/A")
+              echo "| [${CSV_FILE}](${CSV_URL}) | ${RAW_URL} | [${TIMESTAMP}](${COMMIT_URL}) |" >> /tmp/playlist_links.txt
+            fi
           done
           
           # Update README.md

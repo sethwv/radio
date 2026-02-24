@@ -27,6 +27,7 @@ def main():
         reader = csv.DictReader(f)
         lines = ["#EXTM3U"]
         current_section = None
+        seen_sections = set()
 
         for row in reader:
             section  = row["section"].strip()
@@ -38,14 +39,17 @@ def main():
 
             if section and section != current_section:
                 current_section = section
-                bar = "=" * 67
-                lines += [
-                    "",
-                    f"# {bar}",
-                    f"# {section}",
-                    f"# {bar}",
-                    "",
-                ]
+                # Only output section header if we haven't seen this section before
+                if section not in seen_sections:
+                    seen_sections.add(section)
+                    bar = "=" * 67
+                    lines += [
+                        "",
+                        f"# {bar}",
+                        f"# {section}",
+                        f"# {bar}",
+                        "",
+                    ]
 
             lines.append(f"# {title}")
             lines.append(build_extinf(chno, logo, group, title))

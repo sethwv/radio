@@ -1,5 +1,0 @@
-section,chno,title,group,logo,url
-EXAMPLE,00000,Example Stream,TEST,https://upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/500px-Commons-logo.svg.png,http://127.0.0.1
-,00001,Example Stream 2,TEST,https://upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/500px-Commons-logo.svg.png,http://localhost
-,00002,Example Stream 3,TEST,https://upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/500px-Commons-logo.svg.png,http://example.com
-,00003,Example Stream 4,TEST,https://upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/500px-Commons-logo.svg.png,http://example.org
