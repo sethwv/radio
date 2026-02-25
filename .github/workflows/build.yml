@@ -82,9 +82,9 @@ jobs:
           echo "Valid prefix groups:"
           echo "$VALID_PREFIXES"
           
-          # Get all remote branches except main
+          # Get all remote branches except main and dev/*
           git fetch --prune origin
-          BRANCHES=$(git branch -r | grep -v 'HEAD' | grep -v 'main' | sed 's/origin\///' | xargs)
+          BRANCHES=$(git branch -r | grep -v 'HEAD' | grep -v 'main' | grep -v 'dev/' | sed 's/origin\///' | xargs)
           echo "Existing branches:"
           echo "$BRANCHES"
           
@@ -290,9 +290,9 @@ jobs:
           EXISTING_CSVS=$(ls *.csv 2>/dev/null | sed 's/\.csv$//' | sort)
           VALID_PREFIXES=$(ls *.csv 2>/dev/null | grep '-' | sed 's/-.*//' | sort -u)
           
-          # Get all remote branches except main and generate table rows
+          # Get all remote branches except main and dev/* and generate table rows
           > /tmp/playlist_links.txt
-          git branch -r | grep -v 'HEAD' | grep -v 'main' | sed 's/origin\///' | sort | while read branch; do
+          git branch -r | grep -v 'HEAD' | grep -v 'main' | grep -v 'dev/' | sed 's/origin\///' | sort | while read branch; do
             branch=$(echo "$branch" | xargs)  # trim whitespace
             
             # Check if this is a prefix group branch
