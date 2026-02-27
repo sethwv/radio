@@ -1,11 +1,11 @@
 section,chno,title,group,logo,url
-AM RADIO STREAMS,15700,WMCA 570,RADIO - AM,https://cdn.raddio.net/storage/photos/350168/9b156b98737895b93769f8f6a3e22cc0.jpg,https://19293.live.streamtheworld.com:443/WMCAAMAAC_SC
-,17100,WOR 710,RADIO - AM,https://cdn.raddio.net/storage/photos/374890/aa848d4fd6907d11d7b24ee696e8cf5b.jpg,https://stream.revma.ihrhls.com/zc5874/hls.m3u8
-,17700,WABC 770,RADIO - AM,https://cdn.raddio.net/storage/photos/307671/06d9874a0e1b7c86f6cabb10871c768e.png,https://18193.live.streamtheworld.com:443/WABCAMAAC_SC
-,18800,WCBS 880,RADIO - AM,https://cdn.raddio.net/storage/photos/366746/9ece3953540f80921dfb045761fc9fc7.jpg,https://17813.live.streamtheworld.com:443/KHKAAMAAC_SC
-,20100,WINS 1010,RADIO - AM,https://cdn.raddio.net/storage/photos/226615/5ccf04db1464849d4d4280edb5e65e90.jpg,https://26193.live.streamtheworld.com:443/CFRBAM_ADP/HLS/playlist.m3u8
-,21300,Bloomberg Radio New York,RADIO - AM,https://cdn.raddio.net/storage/photos/307103/ix6y5c2cc1a172e07044151796.png,https://ad-hls.tunein.com/v1/master/30ead7055f8b8e1f2f04add745f139b184df6925/production/v3/newsfree/bloombergny/master.m3u8
-,26000,BIN 1600,RADIO - AM,https://cdn.raddio.net/storage/photos/13994/1c33f71019f58dcf1dc6fa80c74cb1f4.jpg,https://stream.revma.ihrhls.com/zc8772/hls.m3u8
+AM RADIO STREAMS,10570,WMCA 570,RADIO - AM,https://cdn.raddio.net/storage/photos/350168/9b156b98737895b93769f8f6a3e22cc0.jpg,https://19293.live.streamtheworld.com:443/WMCAAMAAC_SC
+,10710,WOR 710,RADIO - AM,https://cdn.raddio.net/storage/photos/374890/aa848d4fd6907d11d7b24ee696e8cf5b.jpg,https://stream.revma.ihrhls.com/zc5874/hls.m3u8
+,10770,WABC 770,RADIO - AM,https://cdn.raddio.net/storage/photos/307671/06d9874a0e1b7c86f6cabb10871c768e.png,https://18193.live.streamtheworld.com:443/WABCAMAAC_SC
+,10880,WCBS 880,RADIO - AM,https://cdn.raddio.net/storage/photos/366746/9ece3953540f80921dfb045761fc9fc7.jpg,https://17813.live.streamtheworld.com:443/KHKAAMAAC_SC
+,11010,WINS 1010,RADIO - AM,https://cdn.raddio.net/storage/photos/226615/5ccf04db1464849d4d4280edb5e65e90.jpg,https://26193.live.streamtheworld.com:443/CFRBAM_ADP/HLS/playlist.m3u8
+,11130,Bloomberg Radio New York,RADIO - AM,https://cdn.raddio.net/storage/photos/307103/ix6y5c2cc1a172e07044151796.png,https://ad-hls.tunein.com/v1/master/30ead7055f8b8e1f2f04add745f139b184df6925/production/v3/newsfree/bloombergny/master.m3u8
+,11600,BIN 1600,RADIO - AM,https://cdn.raddio.net/storage/photos/13994/1c33f71019f58dcf1dc6fa80c74cb1f4.jpg,https://stream.revma.ihrhls.com/zc8772/hls.m3u8
 FM RADIO STREAMS,10889,WSIA 88.9,RADIO - FM,https://cdn.raddio.net/storage/photos/13246/1044b620964107b6e55403ef39ed09c7.png,http://vorbis.wsia.fm:8000/wsia.mp3
 ,10891,WNYU 89.1,RADIO - FM,https://cdn.raddio.net/storage/photos/6347/90a6af92d4ca270cbe90434d77fbca82.png,http://cinema.acs.its.nyu.edu:8000/wnyu128.mp3
 ,10891,WFDU 89.1,RADIO - FM,https://cdn.raddio.net/storage/photos/216544/jgmk5c262f104fb44778134976.png,http://peridot.streamguys.com:5350/iheartjazz-aac

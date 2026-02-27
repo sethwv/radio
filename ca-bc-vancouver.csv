@@ -1,9 +1,9 @@
 section,chno,title,group,logo,url
-AM RADIO STREAMS,17300,CHMJ 730,RADIO - AM,https://cdn.raddio.net/storage/photos/228995/plxn5adb34d6f3165293771443.png,https://corus-hls.leanstream.co/corus/CHMJAM.stream/playlist.m3u8
-,19800,CKNW 980,RADIO - AM,https://cdn.raddio.net/storage/photos/19057/3ed2048358261572e61503057b5ccdb4.jpg,https://corus-hls.leanstream.co/corus/CKNWAM.stream/playlist.m3u8
-,21300,NEWS 1130,RADIO - AM,https://cdn.raddio.net/storage/photos/296949/mz1o5adb6d3194751477196973.png,https://rogers.leanstream.co/rogers/van1130.stream/playlist.m3u8
-,23200,CHMB 1320,RADIO - AM,https://cdn.raddio.net/storage/photos/346978/f03f10809355198e397be943380aebe6.png,http://stream.radiojar.com/nugqupcv8qzuv
-,24700,Fairchild Radio,RADIO - AM,https://cdn.raddio.net/storage/photos/307508/eps85c2cc1dbe01fa160375934.png,http://icecast01.eseenet.com:8000/am1470
+AM RADIO STREAMS,10730,CHMJ 730,RADIO - AM,https://cdn.raddio.net/storage/photos/228995/plxn5adb34d6f3165293771443.png,https://corus-hls.leanstream.co/corus/CHMJAM.stream/playlist.m3u8
+,10980,CKNW 980,RADIO - AM,https://cdn.raddio.net/storage/photos/19057/3ed2048358261572e61503057b5ccdb4.jpg,https://corus-hls.leanstream.co/corus/CKNWAM.stream/playlist.m3u8
+,11130,NEWS 1130,RADIO - AM,https://cdn.raddio.net/storage/photos/296949/mz1o5adb6d3194751477196973.png,https://rogers.leanstream.co/rogers/van1130.stream/playlist.m3u8
+,11320,CHMB 1320,RADIO - AM,https://cdn.raddio.net/storage/photos/346978/f03f10809355198e397be943380aebe6.png,http://stream.radiojar.com/nugqupcv8qzuv
+,11470,Fairchild Radio,RADIO - AM,https://cdn.raddio.net/storage/photos/307508/eps85c2cc1dbe01fa160375934.png,http://icecast01.eseenet.com:8000/am1470
 FM RADIO STREAMS,10909,ICI 90.9,RADIO - FM,https://cdn.raddio.net/storage/photos/30002/7e5b72602513bdcb7125cb2ea6c360f7.png,https://rcavliveaudio-tunein.akamaized.net/hls/live/2006996/M-7BVAN0_VAN/playlist.m3u8
 ,10931,REDFM 93.1,RADIO - FM,https://cdn.raddio.net/storage/photos/262011/b48408d716a5f6a05db0f7812041eb81.png,https://ice10.securenetsystems.net/CKYE?playSessionID=14203CC6-A632-4705-F078C1265A306ADA
 ,10945,CFBT 94.5,RADIO - FM,https://cdn.raddio.net/storage/photos/9580/t4ge5c2549c38ec12908153742.png,https://14103.live.streamtheworld.com:443/CFBTFM_ADP/HLS/playlist.m3u8

@@ -1,11 +1,11 @@
 section,chno,title,group,logo,url
-AM RADIO STREAMS,15600,KSFO 560,RADIO - AM,https://cdn.raddio.net/storage/photos/308516/40a6eec3779293e39c201342c47c6734.png,https://18243.live.streamtheworld.com:443/KSFOAMAAC_SC
-,16800,KNBR 680,RADIO - AM,https://cdn.raddio.net/storage/photos/308397/49db47a2a2afa5e0865dde917f6fa1cc.png,https://29324.live.streamtheworld.com:443/KNBRAMAAC_SC
-,18600,KTRB 860,RADIO - AM,https://cdn.raddio.net/storage/photos/21927/apc05c25502582a1f698872916.png,https://14013.live.streamtheworld.com:443/KTRBAMAAC_SC
-,19600,Bloomberg Radio San Francisco,RADIO - AM,https://cdn.raddio.net/storage/photos/308671/52abf427972064dff9b751c96a6c8424.png,https://liveproduseast.global.ssl.fastly.net/rad/Channel-RAD-AWS-virginia-1/Source-RadSF-48-1_live.m3u8
-,20500,KNBR 1050,RADIO - AM,https://cdn.raddio.net/storage/photos/308535/031c30ea3dfa14a9d04ce6a15e47c412.png,https://29324.live.streamtheworld.com:443/KTCTAMAAC_SC
-,22600,KYA 1260,RADIO - AM,https://cdn.raddio.net/storage/photos/40416/kjmh5c255b6102f03435948623.png,https://pavo.prostreaming.net:8038/stream
-,24500,KEST 1450,RADIO - AM,https://cdn.raddio.net/storage/photos/19850/csv35c254f23c8c56842040296.png,http://radiokest.serverroom.us:6670/;
+AM RADIO STREAMS,10560,KSFO 560,RADIO - AM,https://cdn.raddio.net/storage/photos/308516/40a6eec3779293e39c201342c47c6734.png,https://18243.live.streamtheworld.com:443/KSFOAMAAC_SC
+,10680,KNBR 680,RADIO - AM,https://cdn.raddio.net/storage/photos/308397/49db47a2a2afa5e0865dde917f6fa1cc.png,https://29324.live.streamtheworld.com:443/KNBRAMAAC_SC
+,10860,KTRB 860,RADIO - AM,https://cdn.raddio.net/storage/photos/21927/apc05c25502582a1f698872916.png,https://14013.live.streamtheworld.com:443/KTRBAMAAC_SC
+,10960,Bloomberg Radio San Francisco,RADIO - AM,https://cdn.raddio.net/storage/photos/308671/52abf427972064dff9b751c96a6c8424.png,https://liveproduseast.global.ssl.fastly.net/rad/Channel-RAD-AWS-virginia-1/Source-RadSF-48-1_live.m3u8
+,11050,KNBR 1050,RADIO - AM,https://cdn.raddio.net/storage/photos/308535/031c30ea3dfa14a9d04ce6a15e47c412.png,https://29324.live.streamtheworld.com:443/KTCTAMAAC_SC
+,11260,KYA 1260,RADIO - AM,https://cdn.raddio.net/storage/photos/40416/kjmh5c255b6102f03435948623.png,https://pavo.prostreaming.net:8038/stream
+,11450,KEST 1450,RADIO - AM,https://cdn.raddio.net/storage/photos/19850/csv35c254f23c8c56842040296.png,http://radiokest.serverroom.us:6670/;
 FM RADIO STREAMS,10893,KPFB 89.3,RADIO - FM,https://cdn.raddio.net/storage/photos/21232/a8xr5c254fd8e1c61072666136.png,https://streams.pacifica.org:9000/kpfa
 ,10895,KPOO 89.5,RADIO - FM,https://cdn.raddio.net/storage/photos/21268/sf0q5c254fdba1d98211056928.png,http://amber.streamguys.com:5220/xstream
 ,10903,KDFC 90.3,RADIO - FM,https://cdn.raddio.net/storage/photos/241964/h7pm5adb378d1b5b0800028885.png,https://14023.live.streamtheworld.com:443/KDFCFMAAC_SC

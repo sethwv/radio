@@ -1,14 +1,14 @@
 section,chno,title,group,logo,url
-AM RADIO STREAMS,16400,CFMJ 640,RADIO - AM,https://cdn.raddio.net/storage/photos/218482/706d5241d5307060d9fe02012d78e478.png,https://corus-hls.leanstream.co/corus/CFMJAM.stream/playlist.m3u8
-,16800,CFTR 680,RADIO - AM,https://cdn.raddio.net/storage/photos/350259/dbd06980db2b80b68f18fc4f9d7b3190.png,https://rogers-hls.leanstream.co/rogers/tor680.stream/playlist.m3u8
-,18600,ICI 860,RADIO - AM,https://cdn.raddio.net/storage/photos/19005/6424cd3ce819a27fe1d221d140b9f786.png,https://rcavliveaudio.akamaized.net/hls/live/2006973/P-2OTOR0_TOR/playlist.m3u8
-,20100,CFRB 1010,RADIO - AM,https://cdn.raddio.net/storage/photos/18951/ab28d747523c2f927e0529527fd7848c.png,https://26193.live.streamtheworld.com:443/CFRBAM_ADP/HLS/playlist.m3u8
-,20500,TSN 1050,RADIO - AM,https://cdn.raddio.net/storage/photos/15130/89c31a1449c33977805e10b41e561da2.png,https://18003.live.streamtheworld.com:443/CHUMAM_ADP/HLS/playlist.m3u8
-,22800,CJRU 1280,RADIO - AM,https://cdn.raddio.net/storage/photos/163667/k8ow5c26181be2b65708954719.png,http://ryerson.out.airtime.pro:8000/ryerson_b
-,24300,Fairchild Radio,RADIO - AM,https://cdn.raddio.net/storage/photos/237718/x8c45adb36ae0100d055416617.png,http://icecast01.eseenet.com:8000/am1430
-,25400,CHIN 1540,RADIO - AM,https://cdn.raddio.net/storage/photos/308087/c4f75c2cc22dcadea762390499.png,http://ice7.securenetsystems.net/CHINAM
-,26100,CHHA1016AM,RADIO - AM,https://cdn.raddio.net/storage/photos/345543/be80caec59245e607e8cfe08e4ebab5e.png,http://72.139.27.130:100/broadwave.mp3?src=1&rate=1&ref=
-,26900,CHTO 1690,RADIO - AM,https://cdn.raddio.net/storage/photos/232238/60a88932badb6fe0439ff39d0b40d3dc.png,https://phoebe.streamerr.co:4920/;
+AM RADIO STREAMS,10640,CFMJ 640,RADIO - AM,https://cdn.raddio.net/storage/photos/218482/706d5241d5307060d9fe02012d78e478.png,https://corus-hls.leanstream.co/corus/CFMJAM.stream/playlist.m3u8
+,10680,CFTR 680,RADIO - AM,https://cdn.raddio.net/storage/photos/350259/dbd06980db2b80b68f18fc4f9d7b3190.png,https://rogers-hls.leanstream.co/rogers/tor680.stream/playlist.m3u8
+,10860,ICI 860,RADIO - AM,https://cdn.raddio.net/storage/photos/19005/6424cd3ce819a27fe1d221d140b9f786.png,https://rcavliveaudio.akamaized.net/hls/live/2006973/P-2OTOR0_TOR/playlist.m3u8
+,11010,CFRB 1010,RADIO - AM,https://cdn.raddio.net/storage/photos/18951/ab28d747523c2f927e0529527fd7848c.png,https://26193.live.streamtheworld.com:443/CFRBAM_ADP/HLS/playlist.m3u8
+,11050,TSN 1050,RADIO - AM,https://cdn.raddio.net/storage/photos/15130/89c31a1449c33977805e10b41e561da2.png,https://18003.live.streamtheworld.com:443/CHUMAM_ADP/HLS/playlist.m3u8
+,11280,CJRU 1280,RADIO - AM,https://cdn.raddio.net/storage/photos/163667/k8ow5c26181be2b65708954719.png,http://ryerson.out.airtime.pro:8000/ryerson_b
+,11430,Fairchild Radio,RADIO - AM,https://cdn.raddio.net/storage/photos/237718/x8c45adb36ae0100d055416617.png,http://icecast01.eseenet.com:8000/am1430
+,11540,CHIN 1540,RADIO - AM,https://cdn.raddio.net/storage/photos/308087/c4f75c2cc22dcadea762390499.png,http://ice7.securenetsystems.net/CHINAM
+,11610,CHHA1016AM,RADIO - AM,https://cdn.raddio.net/storage/photos/345543/be80caec59245e607e8cfe08e4ebab5e.png,http://72.139.27.130:100/broadwave.mp3?src=1&rate=1&ref=
+,11690,CHTO 1690,RADIO - AM,https://cdn.raddio.net/storage/photos/232238/60a88932badb6fe0439ff39d0b40d3dc.png,https://phoebe.streamerr.co:4920/;
 FM RADIO STREAMS,10881,CIND 88.1,RADIO - FM,https://cdn.raddio.net/storage/photos/310672/mnvr5c2cc398e9908066159389.png,https://localradio.streamb.live/SB00349
 ,10889,CIRV 88.9,RADIO - FM,https://cdn.raddio.net/storage/photos/352143/9c378925425e2de56cbaa7bb87b2e250.png,http://ice5.securenetsystems.net:80/CIRV
 ,10911,JAZZ 91.1,RADIO - FM,https://cdn.raddio.net/storage/photos/19023/e95921ca68357f927446107547173c0b.png,https://jazzfm91.streamb.live/SB00009?args=tunein_01
