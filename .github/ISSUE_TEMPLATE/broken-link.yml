@@ -1,0 +1,41 @@
+name: Broken Link
+description: Report a stream URL that is no longer working
+labels: ["broken link"]
+body:
+  - type: input
+    id: csv-file
+    attributes:
+      label: CSV File
+      description: Which CSV file contains the station?
+      placeholder: ca-on-kitchener.csv
+    validations:
+      required: true
+  - type: input
+    id: title
+    attributes:
+      label: Station Title
+      description: The title as it appears in the CSV (e.g. CKGL 570)
+      placeholder: CKGL 570
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Stream URL
+      description: The broken stream URL from the CSV
+    validations:
+      required: true
+  - type: input
+    id: working-url
+    attributes:
+      label: Working URL (if known)
+      description: A replacement URL that works, if you have one
+    validations:
+      required: false
+  - type: textarea
+    id: details
+    attributes:
+      label: Additional Details
+      description: Any other context (error messages, when it stopped working, etc.)
+    validations:
+      required: false

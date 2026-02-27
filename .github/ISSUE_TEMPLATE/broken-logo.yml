@@ -1,0 +1,41 @@
+name: Broken Logo
+description: Report a station logo that is missing or not loading
+labels: ["broken logo"]
+body:
+  - type: input
+    id: csv-file
+    attributes:
+      label: CSV File
+      description: Which CSV file contains the station?
+      placeholder: ca-on-kitchener.csv
+    validations:
+      required: true
+  - type: input
+    id: title
+    attributes:
+      label: Station Title
+      description: The title as it appears in the CSV (e.g. CKGL 570)
+      placeholder: CKGL 570
+    validations:
+      required: true
+  - type: input
+    id: logo-url
+    attributes:
+      label: Logo URL
+      description: The broken logo URL from the CSV
+    validations:
+      required: true
+  - type: input
+    id: working-logo
+    attributes:
+      label: Working Logo URL (if known)
+      description: A replacement logo URL that works, if you have one
+    validations:
+      required: false
+  - type: textarea
+    id: details
+    attributes:
+      label: Additional Details
+      description: Any other context (e.g. wrong station logo, low resolution, etc.)
+    validations:
+      required: false

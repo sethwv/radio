@@ -1,0 +1,33 @@
+name: Region Request
+description: Request a new region/market be added
+labels: ["region request"]
+body:
+  - type: input
+    id: region
+    attributes:
+      label: Region / Market
+      description: The city or area you'd like added
+      placeholder: e.g. Calgary, AB, Canada
+    validations:
+      required: true
+  - type: input
+    id: csv-name
+    attributes:
+      label: Suggested CSV Filename
+      description: Following the existing naming convention (country-province-city)
+      placeholder: ca-ab-calgary.csv
+    validations:
+      required: false
+  - type: textarea
+    id: stations
+    attributes:
+      label: Stations (if known)
+      description: List any stations you know of in this region
+    validations:
+      required: false
+  - type: textarea
+    id: details
+    attributes:
+      label: Additional Details
+    validations:
+      required: false

@@ -1,0 +1,46 @@
+name: Incorrect Info
+description: Report incorrect station information (title, frequency, group, etc.)
+labels: ["incorrect info"]
+body:
+  - type: input
+    id: csv-file
+    attributes:
+      label: CSV File
+      description: Which CSV file contains the station?
+      placeholder: ca-on-kitchener.csv
+    validations:
+      required: true
+  - type: input
+    id: title
+    attributes:
+      label: Station Title
+      description: The title as it currently appears in the CSV
+      placeholder: CKGL 570
+    validations:
+      required: true
+  - type: dropdown
+    id: field
+    attributes:
+      label: Which field is incorrect?
+      options:
+        - title (callsign/frequency)
+        - chno (channel number)
+        - group
+        - section (AM/FM)
+        - Multiple fields
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Correction
+      description: What should the correct information be?
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Additional Details
+      description: Any supporting context or references
+    validations:
+      required: false

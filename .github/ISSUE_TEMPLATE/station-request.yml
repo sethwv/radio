@@ -1,0 +1,42 @@
+name: Station Request
+description: Request a new station be added to an existing region
+labels: ["station request"]
+body:
+  - type: input
+    id: csv-file
+    attributes:
+      label: CSV File
+      description: Which CSV file should the station be added to?
+      placeholder: ca-on-kitchener.csv
+    validations:
+      required: true
+  - type: input
+    id: station-name
+    attributes:
+      label: Station Name
+      description: The station callsign and frequency (e.g. CKGL 570)
+      placeholder: CKGL 570
+    validations:
+      required: true
+  - type: dropdown
+    id: band
+    attributes:
+      label: Band
+      options:
+        - FM
+        - AM
+    validations:
+      required: true
+  - type: input
+    id: stream-url
+    attributes:
+      label: Stream URL (if known)
+      description: A direct stream URL for the station
+    validations:
+      required: false
+  - type: textarea
+    id: details
+    attributes:
+      label: Additional Details
+    validations:
+      required: false
