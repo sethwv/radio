@@ -1,0 +1,42 @@
+#EXTM3U
+
+# ===================================================================
+# AM RADIO STREAMS
+# ===================================================================
+
+# CKGL 570
+#EXTINF:-1 tvg-chno="10570" tvg-id="10570-CKGL" tvg-logo="https://cdn.raddio.net/storage/photos/306920/dk9q5c2cc18560665463489310.png" group-title="RADIO - AM",CKGL 570
+https://rogers.leanstream.co/rogers/kit570.stream/playlist.m3u8
+
+
+# ===================================================================
+# FM RADIO STREAMS
+# ===================================================================
+
+# CJIQ 88.3
+#EXTINF:-1 tvg-chno="10883" tvg-id="10883-CJIQ" tvg-logo="https://cdn.raddio.net/storage/photos/5799/4ee9ed6089a588b8e54dff81c6fa7469.png" group-title="RADIO - FM",CJIQ 88.3
+https://conestoga.leanstream.co/conestoga/CJIQFM.stream/playlist.m3u8
+
+# CKBT 91.5
+#EXTINF:-1 tvg-chno="10915" tvg-id="10915-CKBT" tvg-logo="https://cdn.raddio.net/storage/photos/52730/85fe41a17e0f51c525fb730ea7ac4600.png" group-title="RADIO - FM",CKBT 91.5
+https://corus-hls.leanstream.co/corus/CKBTFM.stream/playlist.m3u8
+
+# CJTW 93.7
+#EXTINF:-1 tvg-chno="10937" tvg-id="10937-CJTW" tvg-logo="https://cdn.raddio.net/storage/photos/355780/05a41577632781b8d0009609e4f2c9c9.png" group-title="RADIO - FM",CJTW 93.7
+https://ice7.securenetsystems.net/CJTWFM
+
+# CHYM 96.7
+#EXTINF:-1 tvg-chno="10967" tvg-id="10967-CHYM" tvg-logo="https://cdn.raddio.net/storage/photos/346904/69e8724df647895290300f39c555b7e5.png" group-title="RADIO - FM",CHYM 96.7
+https://rogers.leanstream.co/rogers/kit967.stream/playlist.m3u8
+
+# CFCA 105.3
+#EXTINF:-1 tvg-chno="11053" tvg-id="11053-CFCA" tvg-logo="https://cdn.raddio.net/storage/photos/18933/2bd373dd5bac4cd7ae3a57a7895f203e.png" group-title="RADIO - FM",CFCA 105.3
+https://18853.live.streamtheworld.com:443/CFCAFM_ADP/HLS/playlist.m3u8
+
+# CIKZ 106.7
+#EXTINF:-1 tvg-chno="11067" tvg-id="11067-CIKZ" tvg-logo="https://cdn.raddio.net/storage/photos/352231/b0809a47f776bb157345a6752d01f039.jpg" group-title="RADIO - FM",CIKZ 106.7
+https://rogers.leanstream.co/rogers/kit1067.stream/playlist.m3u8
+
+# CJDV 107.5
+#EXTINF:-1 tvg-chno="11075" tvg-id="11075-CJDV" tvg-logo="https://cdn.raddio.net/storage/photos/234935/mn9p5adb361bbca82177320107.png" group-title="RADIO - FM",CJDV 107.5
+https://live.leanstream.co/CJDVFM-MP3
