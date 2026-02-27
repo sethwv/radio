@@ -42,10 +42,11 @@ CSV format:
 
 | CSV | Playlist | Updated |
 |-----|----------|---------|
-| **ca** | https://raw.githubusercontent.com/sethwv/radio-playlists/refs/heads/ca/playlist.m3u8 | [2026-02-27 18:59 UTC](https://github.com/sethwv/radio-playlists/commit/ea39124479cf5fcd030ae650b42ba89269a09e4e) |
+| **ca** | https://raw.githubusercontent.com/sethwv/radio-playlists/refs/heads/ca/playlist.m3u8 | [2026-02-27 22:25 UTC](https://github.com/sethwv/radio-playlists/commit/e461c54e0d2cb572a914c86a5dabae41cf75fa83) |
 | **ca-bc** | https://raw.githubusercontent.com/sethwv/radio-playlists/refs/heads/ca-bc/playlist.m3u8 | [2026-02-27 18:59 UTC](https://github.com/sethwv/radio-playlists/commit/b23887160409ce75e0dc2df4df44c1dda6251443) |
 | [ca-bc-vancouver.csv](https://github.com/sethwv/radio-playlists/blob/main/ca-bc-vancouver.csv) | https://raw.githubusercontent.com/sethwv/radio-playlists/refs/heads/ca-bc-vancouver/playlist.m3u8 | [2026-02-27 18:59 UTC](https://github.com/sethwv/radio-playlists/commit/d13b11531a863eb7d2c79e94cc3b8849d86da87d) |
-| **ca-on** | https://raw.githubusercontent.com/sethwv/radio-playlists/refs/heads/ca-on/playlist.m3u8 | [2026-02-27 18:59 UTC](https://github.com/sethwv/radio-playlists/commit/3944be5aa5117e3790630b80d6fb6d9947e31ff3) |
+| **ca-on** | https://raw.githubusercontent.com/sethwv/radio-playlists/refs/heads/ca-on/playlist.m3u8 | [2026-02-27 22:25 UTC](https://github.com/sethwv/radio-playlists/commit/60edcb7fec8713e40c941e4f25e47889f157574a) |
+| [ca-on-barrie.csv](https://github.com/sethwv/radio-playlists/blob/main/ca-on-barrie.csv) | https://raw.githubusercontent.com/sethwv/radio-playlists/refs/heads/ca-on-barrie/playlist.m3u8 | [2026-02-27 22:24 UTC](https://github.com/sethwv/radio-playlists/commit/0d6df7442772b529523dda5da73e59e3de6dbd17) |
 | [ca-on-collingwood.csv](https://github.com/sethwv/radio-playlists/blob/main/ca-on-collingwood.csv) | https://raw.githubusercontent.com/sethwv/radio-playlists/refs/heads/ca-on-collingwood/playlist.m3u8 | [2026-02-27 18:59 UTC](https://github.com/sethwv/radio-playlists/commit/1abb6d7452e4a31357290f1e78c6070d2c4ffb8a) |
 | [ca-on-kitchener.csv](https://github.com/sethwv/radio-playlists/blob/main/ca-on-kitchener.csv) | https://raw.githubusercontent.com/sethwv/radio-playlists/refs/heads/ca-on-kitchener/playlist.m3u8 | [2026-02-27 18:59 UTC](https://github.com/sethwv/radio-playlists/commit/f75f88a745565eebdd0b20aa4e84be60093cee29) |
 | [ca-on-toronto.csv](https://github.com/sethwv/radio-playlists/blob/main/ca-on-toronto.csv) | https://raw.githubusercontent.com/sethwv/radio-playlists/refs/heads/ca-on-toronto/playlist.m3u8 | [2026-02-27 18:59 UTC](https://github.com/sethwv/radio-playlists/commit/c9308343fd3159fced1734dee5ee530a72ba45ac) |
