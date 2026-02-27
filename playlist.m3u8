@@ -1,0 +1,115 @@
+#EXTM3U
+
+# ===================================================================
+# AM RADIO STREAMS
+# ===================================================================
+
+# CHMJ 730
+#EXTINF:-1 tvg-chno="10730" tvg-id="10730-CHMJ" tvg-logo="https://cdn.raddio.net/storage/photos/228995/plxn5adb34d6f3165293771443.png" group-title="RADIO - AM",CHMJ 730
+https://corus-hls.leanstream.co/corus/CHMJAM.stream/playlist.m3u8
+
+# CKNW 980
+#EXTINF:-1 tvg-chno="10980" tvg-id="10980-CKNW" tvg-logo="https://cdn.raddio.net/storage/photos/19057/3ed2048358261572e61503057b5ccdb4.jpg" group-title="RADIO - AM",CKNW 980
+https://corus-hls.leanstream.co/corus/CKNWAM.stream/playlist.m3u8
+
+# CKWX 1130
+#EXTINF:-1 tvg-chno="11130" tvg-id="11130-CKWX" tvg-logo="https://cdn.raddio.net/storage/photos/296949/mz1o5adb6d3194751477196973.png" group-title="RADIO - AM",CKWX 1130
+https://rogers.leanstream.co/rogers/van1130.stream/playlist.m3u8
+
+# CHMB 1320
+#EXTINF:-1 tvg-chno="11320" tvg-id="11320-CHMB" tvg-logo="https://cdn.raddio.net/storage/photos/346978/f03f10809355198e397be943380aebe6.png" group-title="RADIO - AM",CHMB 1320
+http://stream.radiojar.com/nugqupcv8qzuv
+
+# CHKG 1470
+#EXTINF:-1 tvg-chno="11470" tvg-id="11470-CHKG" tvg-logo="https://cdn.raddio.net/storage/photos/307508/eps85c2cc1dbe01fa160375934.png" group-title="RADIO - AM",CHKG 1470
+http://icecast01.eseenet.com:8000/am1470
+
+
+# ===================================================================
+# FM RADIO STREAMS
+# ===================================================================
+
+# CBUF 90.9
+#EXTINF:-1 tvg-chno="10909" tvg-id="10909-CBUF" tvg-logo="https://cdn.raddio.net/storage/photos/30002/7e5b72602513bdcb7125cb2ea6c360f7.png" group-title="RADIO - FM",CBUF 90.9
+https://rcavliveaudio-tunein.akamaized.net/hls/live/2006996/M-7BVAN0_VAN/playlist.m3u8
+
+# CKYE 93.1
+#EXTINF:-1 tvg-chno="10931" tvg-id="10931-CKYE" tvg-logo="https://cdn.raddio.net/storage/photos/262011/b48408d716a5f6a05db0f7812041eb81.png" group-title="RADIO - FM",CKYE 93.1
+https://ice10.securenetsystems.net/CKYE?playSessionID=14203CC6-A632-4705-F078C1265A306ADA
+
+# CFBT 94.5
+#EXTINF:-1 tvg-chno="10945" tvg-id="10945-CFBT" tvg-logo="https://cdn.raddio.net/storage/photos/9580/t4ge5c2549c38ec12908153742.png" group-title="RADIO - FM",CFBT 94.5
+https://14103.live.streamtheworld.com:443/CFBTFM_ADP/HLS/playlist.m3u8
+
+# CKZZ 95.3
+#EXTINF:-1 tvg-chno="10953" tvg-id="10953-CKZZ" tvg-logo="https://cdn.raddio.net/storage/photos/276612/d8efe5ced14e8f1cad4f6fe79055af18.png" group-title="RADIO - FM",CKZZ 95.3
+https://newcap-hls.leanstream.co/newcap/CKZZFM.stream/playlist.m3u8
+
+# CFZT 96.1
+#EXTINF:-1 tvg-chno="10961" tvg-id="10961-CFZT" tvg-logo="https://cdn.raddio.net/storage/photos/237720/t7az5adb36ae18705855072402.png" group-title="RADIO - FM",CFZT 96.1
+http://icecast01.eseenet.com:8000/fm961
+
+# CJAX 96.9
+#EXTINF:-1 tvg-chno="10969" tvg-id="10969-CJAX" tvg-logo="https://cdn.raddio.net/storage/photos/350255/7ef9e6b3a81d9f16773640d3a104f8ca.png" group-title="RADIO - FM",CJAX 96.9
+https://rogers-hls.leanstream.co/rogers/van969.stream/playlist.m3u8
+
+# CFOX 99.3
+#EXTINF:-1 tvg-chno="10993" tvg-id="10993-CFOX" tvg-logo="https://cdn.raddio.net/storage/photos/232212/26a5b53ab49240a085dcb4b50dc5a371.jpg" group-title="RADIO - FM",CFOX 99.3
+https://corus-hls.leanstream.co/corus/CFOXFM.stream/playlist.m3u8
+
+# CFRO 100.5
+#EXTINF:-1 tvg-chno="11005" tvg-id="11005-CFRO" tvg-logo="https://cdn.raddio.net/storage/photos/18957/8f21b5494801672bb47a8bf575d59227.png" group-title="RADIO - FM",CFRO 100.5
+https://listen-coopradio.sharp-stream.com/coopradio.mp3
+
+# CFMI 101.1
+#EXTINF:-1 tvg-chno="11011" tvg-id="11011-CFMI" tvg-logo="https://cdn.raddio.net/storage/photos/345527/9afe8162973ffc5212e8068c434ed9a6.jpg" group-title="RADIO - FM",CFMI 101.1
+https://corus-hls.leanstream.co/corus/CFMIFM.stream/playlist.m3u8
+
+# CITR 101.9
+#EXTINF:-1 tvg-chno="11019" tvg-id="11019-CITR" tvg-logo="https://cdn.raddio.net/storage/photos/14535/b65e646adb4e8e3f1b3645fb5314e0c1.png" group-title="RADIO - FM",CITR 101.9
+https://live.citr.ca/live.aac
+
+# CKPK 102.7
+#EXTINF:-1 tvg-chno="11027" tvg-id="11027-CKPK" tvg-logo="https://cdn.raddio.net/storage/photos/350235/d2aa49ab48bdaafdc9473dc4640bd300.png" group-title="RADIO - FM",CKPK 102.7
+https://redirect.jpbgdigital.com/CKPK?player_type=tunein
+
+# CHQM 103.5
+#EXTINF:-1 tvg-chno="11035" tvg-id="11035-CHQM" tvg-logo="https://cdn.raddio.net/storage/photos/18977/0ef79e3c2ca9d85e5f38282d01452083.jpg" group-title="RADIO - FM",CHQM 103.5
+https://18503.live.streamtheworld.com:443/CHQMFM_ADP/HLS/playlist.m3u8
+
+# CHLG 104.3
+#EXTINF:-1 tvg-chno="11043" tvg-id="11043-CHLG" tvg-logo="https://cdn.raddio.net/storage/photos/284309/af1f165eb108a341901efd0186519945.png" group-title="RADIO - FM",CHLG 104.3
+https://newcap-hls.leanstream.co/newcap/CHLGFM.stream/playlist.m3u8
+
+# CKKS 104.9
+#EXTINF:-1 tvg-chno="11049" tvg-id="11049-CKKS" tvg-logo="https://cdn.raddio.net/storage/photos/366261/9be285c52a4769c800856768ac8a3e37.png" group-title="RADIO - FM",CKKS 104.9
+https://rogers.leanstream.co/rogers/van1049.stream/playlist.m3u8
+
+
+# ===================================================================
+# OTHER STREAMS
+# ===================================================================
+
+# XL Gurbani Kirtan 24/7 | Canada
+#EXTINF:-1 tvg-chno="" tvg-id="-XL" tvg-logo="https://cdn.raddio.net/storage/photos/276268/gu6h5adb6909510ed892336327.png" group-title="RADIO",XL Gurbani Kirtan 24/7 | Canada
+http://rosetta.shoutca.st:8554/;
+
+# Ritmo X99
+#EXTINF:-1 tvg-chno=".1" tvg-id=".1-Ritmo" tvg-logo="https://cdn.raddio.net/storage/photos/379513/941cfe9c732f238de65066f54a11e56c.png" group-title="RADIO",Ritmo X99
+https://listen.ritmo.torontocast.stream
+
+# A Vancouver Radio Station
+#EXTINF:-1 tvg-chno=".2" tvg-id=".2-A" tvg-logo="https://cdn.raddio.net/storage/photos/306518/mg0o5c10d7f1e47a5946933613.png" group-title="RADIO",A Vancouver Radio Station
+https://streamingv2.shoutcast.com/AVancouverRadioStation
+
+# Radio World Today
+#EXTINF:-1 tvg-chno=".3" tvg-id=".3-Radio" tvg-logo="https://cdn.raddio.net/storage/photos/380606/71c4b600ce96f72c95078b45dce8642e.jpg" group-title="RADIO",Radio World Today
+https://a2.asurahosting.com:6660/radio.mp3
+
+# Writers Radio
+#EXTINF:-1 tvg-chno=".4" tvg-id=".4-Writers" tvg-logo="https://cdn.raddio.net/storage/photos/373491/b8a705e8fa2d850c459dba96327fd4b7.png" group-title="RADIO",Writers Radio
+https://stream.radiojar.com/kequvye1hd0uv
+
+# La Bonita X101
+#EXTINF:-1 tvg-chno=".5" tvg-id=".5-La" tvg-logo="https://cdn.raddio.net/storage/photos/378758/d314ea3e0fcc570e7cbd0a9ef204e6c0.png" group-title="RADIO",La Bonita X101
+https://listen.labonita.torontocast.stream
