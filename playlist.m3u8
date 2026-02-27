@@ -1,61 +1,32 @@
 #EXTM3U
 
 # ===================================================================
-# AM RADIO STREAMS
-# ===================================================================
-
-# CFOS 560
-#EXTINF:-1 tvg-chno="10560" tvg-id="10560-CFOS" tvg-logo="https://cdn.raddio.net/storage/photos/305941/2e797f51b808e1a315ac415ee2fe2edf.png" group-title="RADIO - AM",CFOS 560
-https://bayshore-ais.leanstream.co/bayshore-ais/CFOSAM.stream/playlist.m3u8
-
-# CKGL 570
-#EXTINF:-1 tvg-chno="10570" tvg-id="10570-CKGL" tvg-logo="https://cdn.raddio.net/storage/photos/306920/dk9q5c2cc18560665463489310.png" group-title="RADIO - AM",CKGL 570
-https://rogers.leanstream.co/rogers/kit570.stream/playlist.m3u8
-
-# CFMJ 640
-#EXTINF:-1 tvg-chno="10640" tvg-id="10640-CFMJ" tvg-logo="https://cdn.raddio.net/storage/photos/218482/706d5241d5307060d9fe02012d78e478.png" group-title="RADIO - AM",CFMJ 640
-https://corus-hls.leanstream.co/corus/CFMJAM.stream/playlist.m3u8
-
-# CFTR 680
-#EXTINF:-1 tvg-chno="10680" tvg-id="10680-CFTR" tvg-logo="https://cdn.raddio.net/storage/photos/350259/dbd06980db2b80b68f18fc4f9d7b3190.png" group-title="RADIO - AM",CFTR 680
-https://rogers-hls.leanstream.co/rogers/tor680.stream/playlist.m3u8
-
-# CJBC 860
-#EXTINF:-1 tvg-chno="10860" tvg-id="10860-CJBC" tvg-logo="https://cdn.raddio.net/storage/photos/19005/6424cd3ce819a27fe1d221d140b9f786.png" group-title="RADIO - AM",CJBC 860
-https://rcavliveaudio.akamaized.net/hls/live/2006973/P-2OTOR0_TOR/playlist.m3u8
-
-# CFRB 1010
-#EXTINF:-1 tvg-chno="11010" tvg-id="11010-CFRB" tvg-logo="https://cdn.raddio.net/storage/photos/18951/ab28d747523c2f927e0529527fd7848c.png" group-title="RADIO - AM",CFRB 1010
-https://26193.live.streamtheworld.com:443/CFRBAM_ADP/HLS/playlist.m3u8
-
-# CHUM 1050
-#EXTINF:-1 tvg-chno="11050" tvg-id="11050-CHUM" tvg-logo="https://cdn.raddio.net/storage/photos/15130/89c31a1449c33977805e10b41e561da2.png" group-title="RADIO - AM",CHUM 1050
-https://18003.live.streamtheworld.com:443/CHUMAM_ADP/HLS/playlist.m3u8
-
-# CJRU 1280
-#EXTINF:-1 tvg-chno="11280" tvg-id="11280-CJRU" tvg-logo="https://cdn.raddio.net/storage/photos/163667/k8ow5c26181be2b65708954719.png" group-title="RADIO - AM",CJRU 1280
-http://ryerson.out.airtime.pro:8000/ryerson_b
-
-# CHKT 1430
-#EXTINF:-1 tvg-chno="11430" tvg-id="11430-CHKT" tvg-logo="https://cdn.raddio.net/storage/photos/237718/x8c45adb36ae0100d055416617.png" group-title="RADIO - AM",CHKT 1430
-http://icecast01.eseenet.com:8000/am1430
-
-# CHIN 1540
-#EXTINF:-1 tvg-chno="11540" tvg-id="11540-CHIN" tvg-logo="https://cdn.raddio.net/storage/photos/308087/c4f75c2cc22dcadea762390499.png" group-title="RADIO - AM",CHIN 1540
-http://ice7.securenetsystems.net/CHINAM
-
-# CHHA 1610
-#EXTINF:-1 tvg-chno="11610" tvg-id="11610-CHHA" tvg-logo="https://cdn.raddio.net/storage/photos/345543/be80caec59245e607e8cfe08e4ebab5e.png" group-title="RADIO - AM",CHHA 1610
-http://72.139.27.130:100/broadwave.mp3?src=1&rate=1&ref=
-
-# CHTO 1690
-#EXTINF:-1 tvg-chno="11690" tvg-id="11690-CHTO" tvg-logo="https://cdn.raddio.net/storage/photos/232238/60a88932badb6fe0439ff39d0b40d3dc.png" group-title="RADIO - AM",CHTO 1690
-https://phoebe.streamerr.co:4920/;
-
-
-# ===================================================================
 # FM RADIO STREAMS
 # ===================================================================
+
+# CISO 89.1
+#EXTINF:-1 tvg-chno="10891" tvg-id="10891-CISO" tvg-logo="https://cdn.raddio.net/storage/photos/309749/ecfd644100c767daf6c857e24c49eaf7.jpg" group-title="RADIO - FM",CISO 89.1
+https://bayshore-ais.leanstream.co/bayshore-ais/CISOFM.stream/playlist.m3u8
+
+# CHAY 93.1
+#EXTINF:-1 tvg-chno="10931" tvg-id="10931-CHAY" tvg-logo="https://cdn.raddio.net/storage/photos/238200/59b45d812f3edaeabfc586bc2e8dee14.png" group-title="RADIO - FM",CHAY 93.1
+https://live.leanstream.co/CHAYFM-MP3?args=tunein
+
+# CJLF 100.3
+#EXTINF:-1 tvg-chno="11003" tvg-id="11003-CJLF" tvg-logo="https://cdn.raddio.net/storage/photos/14553/ivtc5c254c7912487041070460.png" group-title="RADIO - FM",CJLF 100.3
+http://netstream.lifeonline.fm/CJLF/128mp3
+
+# CIQB 101.1
+#EXTINF:-1 tvg-chno="11011" tvg-id="11011-CIQB" tvg-logo="https://cdn.raddio.net/storage/photos/308085/51e6ac0194519833a82315a2b6fe5447.png" group-title="RADIO - FM",CIQB 101.1
+https://corus-hls.leanstream.co/corus/CIQBFM.stream/playlist.m3u8
+
+# CICX 105.9
+#EXTINF:-1 tvg-chno="11059" tvg-id="11059-CICX" tvg-logo="https://cdn.raddio.net/storage/photos/346890/c929ca1f198dbafddc580e7ef42f251e.jpg" group-title="RADIO - FM",CICX 105.9
+https://15313.live.streamtheworld.com:443/CICXFM_ADP/HLS/playlist.m3u8
+
+# CICX 106
+#EXTINF:-1 tvg-chno="11060" tvg-id="11060-CICX" tvg-logo="https://cdn.raddio.net/storage/photos/344323/79d92f4ff7efa8104b1c07c297b51066.png" group-title="RADIO - FM",CICX 106
+https://15313.live.streamtheworld.com:443/CICXFM_ADP/HLS/playlist.m3u8
 
 # CKYC 93.7
 #EXTINF:-1 tvg-chno="10937" tvg-id="10937-CKYC" tvg-logo="https://cdn.raddio.net/storage/photos/309137/2320a4b746310dd2832523a2edae89db.png" group-title="RADIO - FM",CKYC 93.7
@@ -180,6 +151,59 @@ http://ice9.securenetsystems.net/CHOQ
 # CIRK 107.1
 #EXTINF:-1 tvg-chno="11071" tvg-id="11071-CIRK" tvg-logo="https://cdn.raddio.net/storage/photos/250761/cb2066cf455eaa1adf4ddb018ef7a30f.png" group-title="RADIO - FM",CIRK 107.1
 https://newcap-hls.leanstream.co/newcap/CIRKFM.stream/playlist.m3u8
+
+
+# ===================================================================
+# AM RADIO STREAMS
+# ===================================================================
+
+# CFOS 560
+#EXTINF:-1 tvg-chno="10560" tvg-id="10560-CFOS" tvg-logo="https://cdn.raddio.net/storage/photos/305941/2e797f51b808e1a315ac415ee2fe2edf.png" group-title="RADIO - AM",CFOS 560
+https://bayshore-ais.leanstream.co/bayshore-ais/CFOSAM.stream/playlist.m3u8
+
+# CKGL 570
+#EXTINF:-1 tvg-chno="10570" tvg-id="10570-CKGL" tvg-logo="https://cdn.raddio.net/storage/photos/306920/dk9q5c2cc18560665463489310.png" group-title="RADIO - AM",CKGL 570
+https://rogers.leanstream.co/rogers/kit570.stream/playlist.m3u8
+
+# CFMJ 640
+#EXTINF:-1 tvg-chno="10640" tvg-id="10640-CFMJ" tvg-logo="https://cdn.raddio.net/storage/photos/218482/706d5241d5307060d9fe02012d78e478.png" group-title="RADIO - AM",CFMJ 640
+https://corus-hls.leanstream.co/corus/CFMJAM.stream/playlist.m3u8
+
+# CFTR 680
+#EXTINF:-1 tvg-chno="10680" tvg-id="10680-CFTR" tvg-logo="https://cdn.raddio.net/storage/photos/350259/dbd06980db2b80b68f18fc4f9d7b3190.png" group-title="RADIO - AM",CFTR 680
+https://rogers-hls.leanstream.co/rogers/tor680.stream/playlist.m3u8
+
+# CJBC 860
+#EXTINF:-1 tvg-chno="10860" tvg-id="10860-CJBC" tvg-logo="https://cdn.raddio.net/storage/photos/19005/6424cd3ce819a27fe1d221d140b9f786.png" group-title="RADIO - AM",CJBC 860
+https://rcavliveaudio.akamaized.net/hls/live/2006973/P-2OTOR0_TOR/playlist.m3u8
+
+# CFRB 1010
+#EXTINF:-1 tvg-chno="11010" tvg-id="11010-CFRB" tvg-logo="https://cdn.raddio.net/storage/photos/18951/ab28d747523c2f927e0529527fd7848c.png" group-title="RADIO - AM",CFRB 1010
+https://26193.live.streamtheworld.com:443/CFRBAM_ADP/HLS/playlist.m3u8
+
+# CHUM 1050
+#EXTINF:-1 tvg-chno="11050" tvg-id="11050-CHUM" tvg-logo="https://cdn.raddio.net/storage/photos/15130/89c31a1449c33977805e10b41e561da2.png" group-title="RADIO - AM",CHUM 1050
+https://18003.live.streamtheworld.com:443/CHUMAM_ADP/HLS/playlist.m3u8
+
+# CJRU 1280
+#EXTINF:-1 tvg-chno="11280" tvg-id="11280-CJRU" tvg-logo="https://cdn.raddio.net/storage/photos/163667/k8ow5c26181be2b65708954719.png" group-title="RADIO - AM",CJRU 1280
+http://ryerson.out.airtime.pro:8000/ryerson_b
+
+# CHKT 1430
+#EXTINF:-1 tvg-chno="11430" tvg-id="11430-CHKT" tvg-logo="https://cdn.raddio.net/storage/photos/237718/x8c45adb36ae0100d055416617.png" group-title="RADIO - AM",CHKT 1430
+http://icecast01.eseenet.com:8000/am1430
+
+# CHIN 1540
+#EXTINF:-1 tvg-chno="11540" tvg-id="11540-CHIN" tvg-logo="https://cdn.raddio.net/storage/photos/308087/c4f75c2cc22dcadea762390499.png" group-title="RADIO - AM",CHIN 1540
+http://ice7.securenetsystems.net/CHINAM
+
+# CHHA 1610
+#EXTINF:-1 tvg-chno="11610" tvg-id="11610-CHHA" tvg-logo="https://cdn.raddio.net/storage/photos/345543/be80caec59245e607e8cfe08e4ebab5e.png" group-title="RADIO - AM",CHHA 1610
+http://72.139.27.130:100/broadwave.mp3?src=1&rate=1&ref=
+
+# CHTO 1690
+#EXTINF:-1 tvg-chno="11690" tvg-id="11690-CHTO" tvg-logo="https://cdn.raddio.net/storage/photos/232238/60a88932badb6fe0439ff39d0b40d3dc.png" group-title="RADIO - AM",CHTO 1690
+https://phoebe.streamerr.co:4920/;
 
 
 # ===================================================================
