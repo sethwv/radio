@@ -12,6 +12,10 @@ https://bayshore-ais.leanstream.co/bayshore-ais/CISOFM.stream/playlist.m3u8
 #EXTINF:-1 tvg-chno="10931" tvg-id="10931-CHAY" tvg-logo="https://cdn.raddio.net/storage/photos/238200/59b45d812f3edaeabfc586bc2e8dee14.png" group-title="RADIO - FM",CHAY 93.1
 https://live.leanstream.co/CHAYFM-MP3?args=tunein
 
+# CFJB 95.7
+#EXTINF:-1 tvg-chno="10950" tvg-id="10950-CFJB" tvg-logo="https://cdn.raddio.net/storage/photos/307506/uvmt5c2cc1db98f68225176717.png" group-title="RADIO - FM",CFJB 95.7
+https://buf-live2-ais-relay1.leanstream.co/cob/CFJBFM.stream/playlist.m3u8
+
 # CJLF 100.3
 #EXTINF:-1 tvg-chno="11003" tvg-id="11003-CJLF" tvg-logo="https://cdn.raddio.net/storage/photos/14553/ivtc5c254c7912487041070460.png" group-title="RADIO - FM",CJLF 100.3
 http://netstream.lifeonline.fm/CJLF/128mp3
