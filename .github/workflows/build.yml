@@ -77,8 +77,19 @@ jobs:
           echo "Existing CSV files:"
           echo "$EXISTING_CSVS"
           
-          # Get list of valid prefixes (for grouped playlists)
-          VALID_PREFIXES=$(ls *.csv 2>/dev/null | grep '-' | sed 's/-.*//' | sort -u)
+          # Get list of valid prefixes (multi-level, segments must be <=3 chars each)
+          VALID_PREFIXES=$(
+            for csv in *.csv; do
+              name="${csv%.csv}"
+              IFS='-' read -ra parts <<< "$name"
+              prefix=""
+              for part in "${parts[@]}"; do
+                [ ${#part} -gt 3 ] && break
+                [ -n "$prefix" ] && prefix="$prefix-$part" || prefix="$part"
+                [ "$prefix" != "$name" ] && echo "$prefix"
+              done
+            done | sort -u
+          )
           echo "Valid prefix groups:"
           echo "$VALID_PREFIXES"
           
@@ -193,8 +204,19 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git remote set-url origin "https://x-access-token:${GH_TOKEN}@${GITHUB_SERVER_URL#*//}/${GITHUB_REPOSITORY}"
           
-          # Get all unique prefixes (part before first dash in filename)
-          PREFIXES=$(ls *.csv 2>/dev/null | grep '-' | sed 's/-.*//' | sort -u)
+          # Get all unique prefixes (multi-level, segments must be <=3 chars each)
+          PREFIXES=$(
+            for csv in *.csv; do
+              name="${csv%.csv}"
+              IFS='-' read -ra parts <<< "$name"
+              prefix=""
+              for part in "${parts[@]}"; do
+                [ ${#part} -gt 3 ] && break
+                [ -n "$prefix" ] && prefix="$prefix-$part" || prefix="$part"
+                [ "$prefix" != "$name" ] && echo "$prefix"
+              done
+            done | sort -u
+          )
           
           if [ -z "$PREFIXES" ]; then
             echo "No prefixed CSVs found, skipping grouped playlists"
@@ -288,7 +310,18 @@ jobs:
           
           # Get list of CSV files and prefixes
           EXISTING_CSVS=$(ls *.csv 2>/dev/null | sed 's/\.csv$//' | sort)
-          VALID_PREFIXES=$(ls *.csv 2>/dev/null | grep '-' | sed 's/-.*//' | sort -u)
+          VALID_PREFIXES=$(
+            for csv in *.csv; do
+              name="${csv%.csv}"
+              IFS='-' read -ra parts <<< "$name"
+              prefix=""
+              for part in "${parts[@]}"; do
+                [ ${#part} -gt 3 ] && break
+                [ -n "$prefix" ] && prefix="$prefix-$part" || prefix="$part"
+                [ "$prefix" != "$name" ] && echo "$prefix"
+              done
+            done | sort -u
+          )
           
           # Get all remote branches except main and dev/* and generate table rows
           > /tmp/playlist_links.txt
