@@ -4,8 +4,8 @@ AM RADIO STREAMS,10570,WMCA 570,RADIO - AM,https://cdn.raddio.net/storage/photos
 ,10770,WABC 770,RADIO - AM,https://cdn.raddio.net/storage/photos/307671/06d9874a0e1b7c86f6cabb10871c768e.png,https://18193.live.streamtheworld.com:443/WABCAMAAC_SC
 ,10880,WCBS 880,RADIO - AM,https://cdn.raddio.net/storage/photos/366746/9ece3953540f80921dfb045761fc9fc7.jpg,https://17813.live.streamtheworld.com:443/KHKAAMAAC_SC
 ,11010,WINS 1010,RADIO - AM,https://cdn.raddio.net/storage/photos/226615/5ccf04db1464849d4d4280edb5e65e90.jpg,https://26193.live.streamtheworld.com:443/CFRBAM_ADP/HLS/playlist.m3u8
-,11130,Bloomberg Radio New York,RADIO - AM,https://cdn.raddio.net/storage/photos/307103/ix6y5c2cc1a172e07044151796.png,https://ad-hls.tunein.com/v1/master/30ead7055f8b8e1f2f04add745f139b184df6925/production/v3/newsfree/bloombergny/master.m3u8
-,11600,BIN 1600,RADIO - AM,https://cdn.raddio.net/storage/photos/13994/1c33f71019f58dcf1dc6fa80c74cb1f4.jpg,https://stream.revma.ihrhls.com/zc8772/hls.m3u8
+,11130,WBBR 1130,RADIO - AM,https://cdn.raddio.net/storage/photos/307103/ix6y5c2cc1a172e07044151796.png,https://ad-hls.tunein.com/v1/master/30ead7055f8b8e1f2f04add745f139b184df6925/production/v3/newsfree/bloombergny/master.m3u8
+,11600,WBIN 1600,RADIO - AM,https://cdn.raddio.net/storage/photos/13994/1c33f71019f58dcf1dc6fa80c74cb1f4.jpg,https://stream.revma.ihrhls.com/zc8772/hls.m3u8
 FM RADIO STREAMS,10889,WSIA 88.9,RADIO - FM,https://cdn.raddio.net/storage/photos/13246/1044b620964107b6e55403ef39ed09c7.png,http://vorbis.wsia.fm:8000/wsia.mp3
 ,10891,WNYU 89.1,RADIO - FM,https://cdn.raddio.net/storage/photos/6347/90a6af92d4ca270cbe90434d77fbca82.png,http://cinema.acs.its.nyu.edu:8000/wnyu128.mp3
 ,10891,WFDU 89.1,RADIO - FM,https://cdn.raddio.net/storage/photos/216544/jgmk5c262f104fb44778134976.png,http://peridot.streamguys.com:5350/iheartjazz-aac
@@ -14,13 +14,13 @@ FM RADIO STREAMS,10889,WSIA 88.9,RADIO - FM,https://cdn.raddio.net/storage/photo
 ,10899,WKCR 89.9,RADIO - FM,https://cdn.raddio.net/storage/photos/18254/p8a35c254e4b947ad016659275.png,http://wkcr.streamguys1.com/live
 ,10903,WHCR 90.3,RADIO - FM,https://cdn.raddio.net/storage/photos/17679/zyvi5c254e0bc4e4a401788511.png,http://stream.radiojar.com/aafrqsmpyxquv
 ,10907,WFUV 90.7,RADIO - FM,https://cdn.raddio.net/storage/photos/17392/44c5048c02956c3008024059a64bf244.png,https://onair.wfuv.org/onair-aacplus
-,10907,FUV 90.7,RADIO - FM,https://cdn.raddio.net/storage/photos/28354/e5cl5c2553ad11734083905076.png,https://music.wfuv.org/music-aacplus
+,10907,WFUV 90.7,RADIO - FM,https://cdn.raddio.net/storage/photos/28354/e5cl5c2553ad11734083905076.png,https://music.wfuv.org/music-aacplus
 ,10939,WNYC 93.9,RADIO - FM,https://cdn.raddio.net/storage/photos/12413/xf1z5c254b742019b948467312.png,http://fm939.wnyc.org/wnycfm-tunein.aac
 ,10995,WBAI 99.5,RADIO - FM,https://cdn.raddio.net/storage/photos/16307/5633ef7e6a52830fe0ca60282330345d.png,http://stream.wbai.org:8000/wbai_128
-,11003,Z100,RADIO - FM,https://cdn.raddio.net/storage/photos/373313/60e0239397561d27ac649f11e1fe8655.png,https://stream.revma.ihrhls.com/zc1469
+,11003,WHTZ 100.3,RADIO - FM,https://cdn.raddio.net/storage/photos/373313/60e0239397561d27ac649f11e1fe8655.png,https://stream.revma.ihrhls.com/zc1469
 ,11011,WCBS 101.1,RADIO - FM,https://cdn.raddio.net/storage/photos/349237/19460ab659aa9d0e19506588cd233845.jpg,http://ice41.securenetsystems.net/WCRK
-,11043,Q104.3 - New York's Classic Rock,RADIO - FM,https://cdn.raddio.net/storage/photos/374891/e9e56b41c8e76db07f44f9775398acbb.png,https://stream.revma.ihrhls.com/zc1465
-,11067,106.7 Lite FM,RADIO - FM,https://cdn.raddio.net/storage/photos/375337/e5bf495b60e7ec7ea6cb29c301daccc0.jpg,https://stream.revma.ihrhls.com/zc1477
+,11043,WAXQ 104.3,RADIO - FM,https://cdn.raddio.net/storage/photos/374891/e9e56b41c8e76db07f44f9775398acbb.png,https://stream.revma.ihrhls.com/zc1465
+,11067,WLTW 106.7,RADIO - FM,https://cdn.raddio.net/storage/photos/375337/e5bf495b60e7ec7ea6cb29c301daccc0.jpg,https://stream.revma.ihrhls.com/zc1477
 OTHER STREAMS,,C-SPAN Radio,RADIO,https://cdn.raddio.net/storage/photos/161623/5665e31c7bfe32d5684d7c01cf05f3f7.png,https://17553.live.streamtheworld.com:443/CSPANRADIOAAC_SC
 ,,HLN,RADIO,https://cdn.raddio.net/storage/photos/334225/79d6c85705b7bdba08e1c18ca5fd8b53.png,http://tunein.streamguys1.com/cnnhln
 ,,Z100,RADIO,/img/noimg-station-100x100.jpg,https://ample.revma.ihrhls.com/zc1469/40_celu0cen8d7602/playlist.m3u8

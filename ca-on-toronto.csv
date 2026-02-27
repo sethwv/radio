@@ -1,31 +1,31 @@
 section,chno,title,group,logo,url
 AM RADIO STREAMS,10640,CFMJ 640,RADIO - AM,https://cdn.raddio.net/storage/photos/218482/706d5241d5307060d9fe02012d78e478.png,https://corus-hls.leanstream.co/corus/CFMJAM.stream/playlist.m3u8
 ,10680,CFTR 680,RADIO - AM,https://cdn.raddio.net/storage/photos/350259/dbd06980db2b80b68f18fc4f9d7b3190.png,https://rogers-hls.leanstream.co/rogers/tor680.stream/playlist.m3u8
-,10860,ICI 860,RADIO - AM,https://cdn.raddio.net/storage/photos/19005/6424cd3ce819a27fe1d221d140b9f786.png,https://rcavliveaudio.akamaized.net/hls/live/2006973/P-2OTOR0_TOR/playlist.m3u8
+,10860,CJBC 860,RADIO - AM,https://cdn.raddio.net/storage/photos/19005/6424cd3ce819a27fe1d221d140b9f786.png,https://rcavliveaudio.akamaized.net/hls/live/2006973/P-2OTOR0_TOR/playlist.m3u8
 ,11010,CFRB 1010,RADIO - AM,https://cdn.raddio.net/storage/photos/18951/ab28d747523c2f927e0529527fd7848c.png,https://26193.live.streamtheworld.com:443/CFRBAM_ADP/HLS/playlist.m3u8
-,11050,TSN 1050,RADIO - AM,https://cdn.raddio.net/storage/photos/15130/89c31a1449c33977805e10b41e561da2.png,https://18003.live.streamtheworld.com:443/CHUMAM_ADP/HLS/playlist.m3u8
+,11050,CHUM 1050,RADIO - AM,https://cdn.raddio.net/storage/photos/15130/89c31a1449c33977805e10b41e561da2.png,https://18003.live.streamtheworld.com:443/CHUMAM_ADP/HLS/playlist.m3u8
 ,11280,CJRU 1280,RADIO - AM,https://cdn.raddio.net/storage/photos/163667/k8ow5c26181be2b65708954719.png,http://ryerson.out.airtime.pro:8000/ryerson_b
-,11430,Fairchild Radio,RADIO - AM,https://cdn.raddio.net/storage/photos/237718/x8c45adb36ae0100d055416617.png,http://icecast01.eseenet.com:8000/am1430
+,11430,CHKT 1430,RADIO - AM,https://cdn.raddio.net/storage/photos/237718/x8c45adb36ae0100d055416617.png,http://icecast01.eseenet.com:8000/am1430
 ,11540,CHIN 1540,RADIO - AM,https://cdn.raddio.net/storage/photos/308087/c4f75c2cc22dcadea762390499.png,http://ice7.securenetsystems.net/CHINAM
-,11610,CHHA1016AM,RADIO - AM,https://cdn.raddio.net/storage/photos/345543/be80caec59245e607e8cfe08e4ebab5e.png,http://72.139.27.130:100/broadwave.mp3?src=1&rate=1&ref=
+,11610,CHHA 1610,RADIO - AM,https://cdn.raddio.net/storage/photos/345543/be80caec59245e607e8cfe08e4ebab5e.png,http://72.139.27.130:100/broadwave.mp3?src=1&rate=1&ref=
 ,11690,CHTO 1690,RADIO - AM,https://cdn.raddio.net/storage/photos/232238/60a88932badb6fe0439ff39d0b40d3dc.png,https://phoebe.streamerr.co:4920/;
 FM RADIO STREAMS,10881,CIND 88.1,RADIO - FM,https://cdn.raddio.net/storage/photos/310672/mnvr5c2cc398e9908066159389.png,https://localradio.streamb.live/SB00349
 ,10889,CIRV 88.9,RADIO - FM,https://cdn.raddio.net/storage/photos/352143/9c378925425e2de56cbaa7bb87b2e250.png,http://ice5.securenetsystems.net:80/CIRV
-,10911,JAZZ 91.1,RADIO - FM,https://cdn.raddio.net/storage/photos/19023/e95921ca68357f927446107547173c0b.png,https://jazzfm91.streamb.live/SB00009?args=tunein_01
+,10911,CJRT 91.1,RADIO - FM,https://cdn.raddio.net/storage/photos/19023/e95921ca68357f927446107547173c0b.png,https://jazzfm91.streamb.live/SB00009?args=tunein_01
 ,10919,CHIN 91.9,RADIO - FM,https://cdn.raddio.net/storage/photos/307001/1ed636e8123c1811e632aaedb63717ab.png,http://ice24.securenetsystems.net/CHINFM1
-,10925,KiSS 92.5,RADIO - FM,https://cdn.raddio.net/storage/photos/350261/f263618e01aa8652f022fd5ae9217189.png,https://rogers-hls.leanstream.co/rogers/tor925.stream/playlist.m3u8
+,10925,CKIS 92.5,RADIO - FM,https://cdn.raddio.net/storage/photos/350261/f263618e01aa8652f022fd5ae9217189.png,https://rogers-hls.leanstream.co/rogers/tor925.stream/playlist.m3u8
 ,10935,CFXJ 93.5,RADIO - FM,https://cdn.raddio.net/storage/photos/228593/e40da5af0d8c16cfc8add8d921de5fe1.png,https://newcap-hls.leanstream.co/newcap/CFXJFM.stream/playlist.m3u8
 ,10969,CKHC 96.9,RADIO - FM,https://cdn.raddio.net/storage/photos/14503/lvoo5c254c74ea042885792786.png,https://live.leanstream.co/CKHCFM-MP3
 ,10973,CHBM 97.3,RADIO - FM,https://cdn.raddio.net/storage/photos/308082/46c22eba25c80cd548890afb677a1860.png,https://newcap-hls.leanstream.co/newcap/CHBMFM.stream/playlist.m3u8
 ,10981,CHFI 98.1,RADIO - FM,https://cdn.raddio.net/storage/photos/350240/151da9b9a8c9f26623df6f61d8491d6b.png,https://rogers-hls.leanstream.co/rogers/tor981.stream/playlist.m3u8
-,10987,G98.7FM,RADIO - FM,https://cdn.raddio.net/storage/photos/100308/11eeecb07d98356564da8ebc28a857fc.png,http://ice64.securenetsystems.net/CKFG
+,10987,CKFG 98.7,RADIO - FM,https://cdn.raddio.net/storage/photos/100308/11eeecb07d98356564da8ebc28a857fc.png,http://ice64.securenetsystems.net/CKFG
 ,10999,CKFM 99.9,RADIO - FM,https://cdn.raddio.net/storage/photos/19031/9c91b06223ac0632ef3b6e412ca34d1e.png,https://19293.live.streamtheworld.com:443/CKFMFM_ADP/HLS/playlist.m3u8
 ,11005,CHIR 100.5,RADIO - FM,https://cdn.raddio.net/storage/photos/2787/17298903395f1f413aec5eb278a5d990.png,http://nap.casthost.net:8004/stream
 ,11007,CHIN 100.7,RADIO - FM,https://cdn.raddio.net/storage/photos/344476/7dd0f50962834f39c6c31f41b9863cfe.png,http://ice7.securenetsystems.net/CHINFM
 ,11013,CMR 101.3,RADIO - FM,https://cdn.raddio.net/storage/photos/48278/9c733b632acfd3f2dcfca21e4dad3457.png,https://live.cmr24.net/CMR/CMR-HQ/icecast.audio
 ,11013,CMR 101.3,RADIO - FM,https://cdn.raddio.net/storage/photos/165113/ua385c261893e545f628556118.png,https://live.cmr24.net/CMR/TamilHD-HQ/icecast.audio
 ,11013,CMR 101.3,RADIO - FM,https://cdn.raddio.net/storage/photos/165115/b7795c2618940f7d9286468285.png,https://live.cmr24.net/CMR/Desi_Music-HQ/icecast.audio
-,11021,EDGE 102.1,RADIO - FM,https://cdn.raddio.net/storage/photos/226663/64327e43b2bd795bc8f7296ca7e07aa1.jpg,https://corus-hls.leanstream.co/corus/CFNYFM.stream/playlist.m3u8
+,11021,CFNY 102.1,RADIO - FM,https://cdn.raddio.net/storage/photos/226663/64327e43b2bd795bc8f7296ca7e07aa1.jpg,https://corus-hls.leanstream.co/corus/CFNYFM.stream/playlist.m3u8
 ,11035,CIDC 103.5,RADIO - FM,https://cdn.raddio.net/storage/photos/304703/18b50f258e7ebdec223deab45e9ace55.png,https://evanov.leanstream.co/evanov/CIDCFM.stream/playlist.m3u8
 ,11045,CHUM 104.5,RADIO - FM,https://cdn.raddio.net/storage/photos/18987/c52e64e0fed57c403496b82244978116.png,https://18163.live.streamtheworld.com:443/CHUMFM_ADP/HLS/playlist.m3u8
 ,11051,CHOQ 105.1,RADIO - FM,https://cdn.raddio.net/storage/photos/58625/c11q5c2566ba4f5bc791341240.png,http://ice9.securenetsystems.net/CHOQ

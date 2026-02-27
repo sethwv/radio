@@ -2,7 +2,7 @@ section,chno,title,group,logo,url
 AM RADIO STREAMS,10560,KSFO 560,RADIO - AM,https://cdn.raddio.net/storage/photos/308516/40a6eec3779293e39c201342c47c6734.png,https://18243.live.streamtheworld.com:443/KSFOAMAAC_SC
 ,10680,KNBR 680,RADIO - AM,https://cdn.raddio.net/storage/photos/308397/49db47a2a2afa5e0865dde917f6fa1cc.png,https://29324.live.streamtheworld.com:443/KNBRAMAAC_SC
 ,10860,KTRB 860,RADIO - AM,https://cdn.raddio.net/storage/photos/21927/apc05c25502582a1f698872916.png,https://14013.live.streamtheworld.com:443/KTRBAMAAC_SC
-,10960,Bloomberg Radio San Francisco,RADIO - AM,https://cdn.raddio.net/storage/photos/308671/52abf427972064dff9b751c96a6c8424.png,https://liveproduseast.global.ssl.fastly.net/rad/Channel-RAD-AWS-virginia-1/Source-RadSF-48-1_live.m3u8
+,10960,KNEW 960,RADIO - AM,https://cdn.raddio.net/storage/photos/308671/52abf427972064dff9b751c96a6c8424.png,https://liveproduseast.global.ssl.fastly.net/rad/Channel-RAD-AWS-virginia-1/Source-RadSF-48-1_live.m3u8
 ,11050,KNBR 1050,RADIO - AM,https://cdn.raddio.net/storage/photos/308535/031c30ea3dfa14a9d04ce6a15e47c412.png,https://29324.live.streamtheworld.com:443/KTCTAMAAC_SC
 ,11260,KYA 1260,RADIO - AM,https://cdn.raddio.net/storage/photos/40416/kjmh5c255b6102f03435948623.png,https://pavo.prostreaming.net:8038/stream
 ,11450,KEST 1450,RADIO - AM,https://cdn.raddio.net/storage/photos/19850/csv35c254f23c8c56842040296.png,http://radiokest.serverroom.us:6670/;
@@ -10,7 +10,7 @@ FM RADIO STREAMS,10893,KPFB 89.3,RADIO - FM,https://cdn.raddio.net/storage/photo
 ,10895,KPOO 89.5,RADIO - FM,https://cdn.raddio.net/storage/photos/21268/sf0q5c254fdba1d98211056928.png,http://amber.streamguys.com:5220/xstream
 ,10903,KDFC 90.3,RADIO - FM,https://cdn.raddio.net/storage/photos/241964/h7pm5adb378d1b5b0800028885.png,https://14023.live.streamtheworld.com:443/KDFCFMAAC_SC
 ,10907,KALX 90.7,RADIO - FM,https://cdn.raddio.net/storage/photos/19159/g5yo5c254ec16166b892305701.png,http://stream.kalx.berkeley.edu:8000/kalx-128.mp3
-,10933,La Raza 93.3,RADIO - FM,https://cdn.raddio.net/storage/photos/24164/2655a136210a1c66a0d631a09b3ef2f1.png,https://liveaudio.lamusica.com/SF_KRZZ/playlist.m3u8
+,10933,KRZZ 93.3,RADIO - FM,https://cdn.raddio.net/storage/photos/24164/2655a136210a1c66a0d631a09b3ef2f1.png,https://liveaudio.lamusica.com/SF_KRZZ/playlist.m3u8
 ,11025,KXSF 102.5,RADIO - FM,https://cdn.raddio.net/storage/photos/109841/927fdf44098c745d3fa0a696d77a2095.jpg,http://107.161.208.3:8000/sfcr
 OTHER STREAMS,,Radio Valencia,RADIO,https://cdn.raddio.net/storage/photos/97872/y3su5c2579e249cbb708785304.png,http://live.str3am.com:3010/live
 ,,Rhythm 86,RADIO,https://cdn.raddio.net/storage/photos/64719/904936c5cde21ab3a4d0e9e2644bed5c.jpg,https://forwardmystream.com/rhythm86
