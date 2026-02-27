@@ -5,6 +5,18 @@ This repository contains only links to streams that are **freely and publicly ac
 
 Use of these streams is subject to the terms of the respective broadcasters and applicable laws in your jurisdiction. This project is intended for personal, non-commercial use only.
 
+## Contributing
+
+Pull requests that add or update CSV files are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
+
+Found a problem or have a suggestion? Open an issue:
+
+- [Report a Broken Link](https://github.com/sethwv/radio-playlists/issues/new?template=broken-link.yml)
+- [Report a Broken Logo](https://github.com/sethwv/radio-playlists/issues/new?template=broken-logo.yml)
+- [Report Incorrect Info](https://github.com/sethwv/radio-playlists/issues/new?template=incorrect-info.yml)
+- [Request a Station](https://github.com/sethwv/radio-playlists/issues/new?template=station-request.yml)
+- [Request a Region](https://github.com/sethwv/radio-playlists/issues/new?template=region-request.yml)
+
 ## Usage
 
 Playlists are generated from CSV source files and published to per-csv-file branches. The `main` branch contains only the source CSV files, each named `<name>.csv`. The workflow generates a `playlist.m3u8` file for each CSV and commits it to a branch named `<name>`.
