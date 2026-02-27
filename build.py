@@ -55,6 +55,19 @@ def main():
                     'url': url
                 })
 
+    # Deduplicate channel numbers across all sections.
+    # First occurrence keeps the original chno; subsequent duplicates
+    # get .1, .2, .3, etc. appended.
+    chno_counts = {}
+    all_stations = [(sec, st) for sec in sections for st in sections[sec]]
+    for _sec, station in all_stations:
+        base = station['chno']
+        if base in chno_counts:
+            chno_counts[base] += 1
+            station['chno'] = f"{base}.{chno_counts[base]}"
+        else:
+            chno_counts[base] = 0
+
     # Second pass: output grouped by section
     lines = ["#EXTM3U"]
     
