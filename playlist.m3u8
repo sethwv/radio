@@ -1,0 +1,29 @@
+#EXTM3U
+
+# ===================================================================
+# FM RADIO STREAMS
+# ===================================================================
+
+# CISO 89.1
+#EXTINF:-1 tvg-chno="10891" tvg-id="10891-CISO" tvg-logo="https://cdn.raddio.net/storage/photos/309749/ecfd644100c767daf6c857e24c49eaf7.jpg" group-title="RADIO - FM",CISO 89.1
+https://bayshore-ais.leanstream.co/bayshore-ais/CISOFM.stream/playlist.m3u8
+
+# CHAY 93.1
+#EXTINF:-1 tvg-chno="10931" tvg-id="10931-CHAY" tvg-logo="https://cdn.raddio.net/storage/photos/238200/59b45d812f3edaeabfc586bc2e8dee14.png" group-title="RADIO - FM",CHAY 93.1
+https://live.leanstream.co/CHAYFM-MP3?args=tunein
+
+# CJLF 100.3
+#EXTINF:-1 tvg-chno="11003" tvg-id="11003-CJLF" tvg-logo="https://cdn.raddio.net/storage/photos/14553/ivtc5c254c7912487041070460.png" group-title="RADIO - FM",CJLF 100.3
+http://netstream.lifeonline.fm/CJLF/128mp3
+
+# CIQB 101.1
+#EXTINF:-1 tvg-chno="11011" tvg-id="11011-CIQB" tvg-logo="https://cdn.raddio.net/storage/photos/308085/51e6ac0194519833a82315a2b6fe5447.png" group-title="RADIO - FM",CIQB 101.1
+https://corus-hls.leanstream.co/corus/CIQBFM.stream/playlist.m3u8
+
+# CICX 105.9
+#EXTINF:-1 tvg-chno="11059" tvg-id="11059-CICX" tvg-logo="https://cdn.raddio.net/storage/photos/346890/c929ca1f198dbafddc580e7ef42f251e.jpg" group-title="RADIO - FM",CICX 105.9
+https://15313.live.streamtheworld.com:443/CICXFM_ADP/HLS/playlist.m3u8
+
+# CICX 106
+#EXTINF:-1 tvg-chno="11060" tvg-id="11060-CICX" tvg-logo="https://cdn.raddio.net/storage/photos/344323/79d92f4ff7efa8104b1c07c297b51066.png" group-title="RADIO - FM",CICX 106
+https://15313.live.streamtheworld.com:443/CICXFM_ADP/HLS/playlist.m3u8
