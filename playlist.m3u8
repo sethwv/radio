@@ -1,0 +1,26 @@
+#EXTM3U
+
+# ===================================================================
+# AM RADIO STREAMS
+# ===================================================================
+
+# CFOS 560
+#EXTINF:-1 tvg-chno="10560" tvg-id="10560-CFOS" tvg-logo="https://cdn.raddio.net/storage/photos/305941/2e797f51b808e1a315ac415ee2fe2edf.png" group-title="RADIO - AM",CFOS 560
+https://bayshore-ais.leanstream.co/bayshore-ais/CFOSAM.stream/playlist.m3u8
+
+
+# ===================================================================
+# FM RADIO STREAMS
+# ===================================================================
+
+# CKYC 93.7
+#EXTINF:-1 tvg-chno="10937" tvg-id="10937-CKYC" tvg-logo="https://cdn.raddio.net/storage/photos/309137/2320a4b746310dd2832523a2edae89db.png" group-title="RADIO - FM",CKYC 93.7
+https://bayshore-ais.leanstream.co/bayshore-ais/CKYCFM.stream/playlist.m3u8
+
+# CKCB 95.1
+#EXTINF:-1 tvg-chno="10951" tvg-id="10951-CKCB" tvg-logo="https://cdn.raddio.net/storage/photos/271655/myb05adb681c8e9e7279308719.png" group-title="RADIO - FM",CKCB 95.1
+https://corus-hls.leanstream.co/corus/CKCBFM.stream/playlist.m3u8
+
+# CIXK 106.5
+#EXTINF:-1 tvg-chno="11065" tvg-id="11065-CIXK" tvg-logo="https://cdn.raddio.net/storage/photos/308084/e2f4626d3d8abb1f0cf5773b40c57ff5.jpg" group-title="RADIO - FM",CIXK 106.5
+https://bayshore-ais.leanstream.co/bayshore-ais/CIXKFM.stream/playlist.m3u8
