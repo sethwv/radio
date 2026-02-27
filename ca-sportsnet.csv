@@ -1,7 +1,7 @@
 section,chno,title,group,logo,url
-SPORTSNET RADIO STREAMS,10590,CJCL 590,RADIO - AM,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/SN590TheFan.svg/500px-SN590TheFan.svg.png,https://rogers-hls.leanstream.co/rogers/tor590.stream/playlist.m3u8
-,10590.1,CJCL 590 (Alt),RADIO - AM,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/SN590TheFan.svg/500px-SN590TheFan.svg.png,https://rogers-hls.leanstream.co/rogers/tor590_alt.stream/playlist.m3u8
-,10650,CISL 650,RADIO - AM,https://upload.wikimedia.org/wikipedia/en/thumb/5/56/SN650Vancouver.svg/500px-SN650Vancouver.svg.png,https://rogers-hls.leanstream.co/rogers/van650.stream/playlist.m3u8
-,10650.1,CISL 650 (Alt),RADIO - AM,https://upload.wikimedia.org/wikipedia/en/thumb/5/56/SN650Vancouver.svg/500px-SN650Vancouver.svg.png,https://rogers-hls.leanstream.co/rogers/van650_alt.stream/playlist.m3u8
-,10960,CFAC 960,RADIO - AM,https://upload.wikimedia.org/wikipedia/en/thumb/0/0a/SN960TheFan.svg/500px-SN960TheFan.svg.png,https://rogers-hls.leanstream.co/rogers/cal960.stream/playlist.m3u8
-,10960.1,CFAC 960 (Alt),RADIO - AM,https://upload.wikimedia.org/wikipedia/en/thumb/0/0a/SN960TheFan.svg/500px-SN960TheFan.svg.png,https://rogers-hls.leanstream.co/rogers/cal960_alt.stream/playlist.m3u8
+SPORTSNET RADIO STREAMS,10590,CJCL 590,RADIO - AM,https://cdn.raddio.net/storage/photos/308083/dsbz5c2cc22d4f22c491680545.png,https://rogers-hls.leanstream.co/rogers/tor590.stream/playlist.m3u8
+,10590.1,CJCL 590 (Alt),RADIO - AM,https://cdn.raddio.net/storage/photos/308083/dsbz5c2cc22d4f22c491680545.png,https://rogers-hls.leanstream.co/rogers/tor590_alt.stream/playlist.m3u8
+,10650,CISL 650,RADIO - AM,https://cdn.raddio.net/storage/photos/327516/bb7b51cd01cf880828f35d4afc57efcb.png,https://rogers-hls.leanstream.co/rogers/van650.stream/playlist.m3u8
+,10650.1,CISL 650 (Alt),RADIO - AM,https://cdn.raddio.net/storage/photos/327516/bb7b51cd01cf880828f35d4afc57efcb.png,https://rogers-hls.leanstream.co/rogers/van650_alt.stream/playlist.m3u8
+,10960,CFAC 960,RADIO - AM,https://cdn.raddio.net/storage/photos/350219/681b2df339db134c849e6cde17219d28.png,https://rogers-hls.leanstream.co/rogers/cal960.stream/playlist.m3u8
+,10960.1,CFAC 960 (Alt),RADIO - AM,https://cdn.raddio.net/storage/photos/350219/681b2df339db134c849e6cde17219d28.png,https://rogers-hls.leanstream.co/rogers/cal960_alt.stream/playlist.m3u8
