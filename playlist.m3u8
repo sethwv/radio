@@ -1,0 +1,79 @@
+#EXTM3U
+
+# ===================================================================
+# AM RADIO STREAMS
+# ===================================================================
+
+# WRYT 1080
+#EXTINF:-1 tvg-chno="11080" tvg-id="11080-WRYT" tvg-logo="https://cdn.raddio.net/storage/photos/13158/g8zu5c254bdbc5c70283989642.png" group-title="RADIO - AM",WRYT 1080
+http://covenantnet.stream.miriamtech.net:8000/wryt
+
+# KLPW 1220
+#EXTINF:-1 tvg-chno="11220" tvg-id="11220-KLPW" tvg-logo="https://cdn.raddio.net/storage/photos/20697/qcn75c254f7b76b42828976193.png" group-title="RADIO - AM",KLPW 1220
+https://stream-01.surfernetwork.com/uxu7891vk1jtv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJ1eHU3ODkxdmsxanR2IiwiaG9zdCI6InN0cmVhbS0wMS5zdXJmZXJuZXR3b3JrLmNvbSIsInJ0dGwiOjUsImp0aSI6InluWUZvMnVuUm1LR3JLNXMtLU5jOXciLCJpYXQiOjE3NzIyMTI5MDgsImV4cCI6MTc3MjIxMjk2OH0.gLpjQieMwjihxmRqqxYpJmKxYOUIcTb7GL5IJ7dSyuY
+
+# KFMO 1240
+#EXTINF:-1 tvg-chno="11240" tvg-id="11240-KFMO" tvg-logo="https://cdn.raddio.net/storage/photos/19938/i2035c254f2a35ec3880331119.png" group-title="RADIO - AM",KFMO 1240
+https://ice24.securenetsystems.net/KFMO
+
+# KXFN 1380
+#EXTINF:-1 tvg-chno="11380" tvg-id="11380-KXFN" tvg-logo="https://cdn.raddio.net/storage/photos/307305/d431236b6179c55eab3ed2d3d34cbb3d.png" group-title="RADIO - AM",KXFN 1380
+https://22213.live.streamtheworld.com:443/RR_MAINAAC_SC
+
+# WBGZ 1570
+#EXTINF:-1 tvg-chno="11570" tvg-id="11570-WBGZ" tvg-logo="https://cdn.raddio.net/storage/photos/349130/3541efba283ae4b5b126caded0487c16.jpg" group-title="RADIO - AM",WBGZ 1570
+https://ice41.securenetsystems.net/WBGZ?playSessionID=4DD74FB4-99E5-49D1-F236047DAE9208A4
+
+
+# ===================================================================
+# FM RADIO STREAMS
+# ===================================================================
+
+# WSIE 88.7
+#EXTINF:-1 tvg-chno="10887" tvg-id="10887-WSIE" tvg-logo="https://cdn.raddio.net/storage/photos/13250/axgm5c254be2a4f11541158980.png" group-title="RADIO - FM",WSIE 88.7
+http://streaming.siue.edu:8000/wsie.mp3
+
+# KCFV 89.5
+#EXTINF:-1 tvg-chno="10895" tvg-id="10895-KCFV" tvg-logo="https://cdn.raddio.net/storage/photos/19508/8dfdf7fcb2bc47c30564c65a9f5c8820.png" group-title="RADIO - FM",KCFV 89.5
+http://ice24.securenetsystems.net/KCFV
+
+# KWMU 90.7
+#EXTINF:-1 tvg-chno="10907" tvg-id="10907-KWMU" tvg-logo="https://cdn.raddio.net/storage/photos/290190/da33238222836b2cac0fde3ec08df1a6.jpg" group-title="RADIO - FM",KWMU 90.7
+https://kwmu1-ice.streamguys1.com/kwmu1
+
+# KWMU 90.7
+#EXTINF:-1 tvg-chno="10907.1" tvg-id="10907.1-KWMU" tvg-logo="https://cdn.raddio.net/storage/photos/61223/35cc495803e827d1df8e4023a4aa1a8f.jpg" group-title="RADIO - FM",KWMU 90.7
+https://kwmu2-ice.streamguys1.com/jazz-128
+
+# KQDS 94.7
+#EXTINF:-1 tvg-chno="10947" tvg-id="10947-KQDS" tvg-logo="https://cdn.raddio.net/storage/photos/21334/11b6a771eb68d1c90c70ca656d5ee2da.png" group-title="RADIO - FM",KQDS 94.7
+https://26143.live.streamtheworld.com:443/KQDSFMAAC_SC
+
+# WXOS 101.1
+#EXTINF:-1 tvg-chno="11011" tvg-id="11011-WXOS" tvg-logo="https://cdn.raddio.net/storage/photos/13858/199ab82b346d35e4e6e6d3b4de456706.png" group-title="RADIO - FM",WXOS 101.1
+https://20603.live.streamtheworld.com:443/WXOSFMAAC_SC
+
+
+# ===================================================================
+# OTHER STREAMS
+# ===================================================================
+
+# MindsEye Radio
+#EXTINF:-1 tvg-chno="" tvg-id="-MindsEye" tvg-logo="https://cdn.raddio.net/storage/photos/206955/r07r5c262ad1d10ac887791630.png" group-title="RADIO",MindsEye Radio
+https://mindseye.streamguys1.com/xstream
+
+# THE VIBE RADIO NETWORK
+#EXTINF:-1 tvg-chno=".1" tvg-id=".1-THE" tvg-logo="https://cdn.raddio.net/storage/photos/379052/66b4b706eab8068d6510eaa9922f01d0.jpg" group-title="RADIO",THE VIBE RADIO NETWORK
+http://server2.fleetradionetwork.com:7240/stream
+
+# Stylin Radio
+#EXTINF:-1 tvg-chno=".2" tvg-id=".2-Stylin" tvg-logo="https://cdn.raddio.net/storage/photos/380399/5162b96f15d3ab6bfc8a97f778ce3659.png" group-title="RADIO",Stylin Radio
+https://nopi.radioca.st/stream
+
+# Top Trend Radio 101
+#EXTINF:-1 tvg-chno=".3" tvg-id=".3-Top" tvg-logo="https://cdn.raddio.net/storage/photos/272191/qftf5adb683869a48591118237.png" group-title="RADIO",Top Trend Radio 101
+http://149.56.157.81/proxy/cwatters?mp=/stream
+
+# Boom Boom Room Burlesque Radio
+#EXTINF:-1 tvg-chno=".4" tvg-id=".4-Boom" tvg-logo="https://cdn.raddio.net/storage/photos/373469/64a7e6d9f8b5a0886dad40944e7b7024.gif" group-title="RADIO",Boom Boom Room Burlesque Radio
+https://streaming.radio.co/s358a840bf/listen
